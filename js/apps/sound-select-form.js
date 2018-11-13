@@ -1,5 +1,5 @@
 import html from '../helper/html.js';
-import userDataApi from '../services/user-api.js';
+import userData from '../services/user-api.js';
 
 function makeTemplate() {
     return html`  
@@ -31,13 +31,13 @@ export default class SoundSelectForm {
             event.preventDefault();
             submit++;
             const elements = form.elements;
-            const userData = {
+            const data = {
                 sample1: elements.sample1.checked,
                 sample2: elements.sample2.checked
             };
             console.log(userData);
 
-            // userData.add(userData);
+            userData.add(data);
             
 
             window.location = './song-result.html';
