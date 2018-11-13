@@ -5,13 +5,11 @@ import userDataApi from '../services/user-api.js';
 function makeTemplate() {
     return html`
     <form id="user-form">
+    <label class="neon">beat-keeper</label>
     <fieldset>
-        <label for="username">Username:</label>
-            <input type="text" name="username" required>
-            <legend>
-            Start:
-        </legend>
-            <label for="genre">Choose genre:</label>
+    <label class="neon" for="username">username:</label>
+    <input type="text" name="username" required>
+    <label class="neon" for="genre">genre:</label>
             <select id="music-genre" name="genre" required>
                 <option value="" disabled selected>Select a genre</option>
                 <option value="rock">Rock</option>
@@ -21,7 +19,7 @@ function makeTemplate() {
     </fieldset>
     </form>
     `;
-};
+}
 
 export default class StartForm {
     constructor(form) {
