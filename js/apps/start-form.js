@@ -42,7 +42,7 @@ export default class StartForm {
             };
 
             userDataApi.add(userData);
-            // window.location = '/hello-pizza/pages/sound-selection.html';
+            window.location = './sound-selection.html';
 
             // form.reset();
 
