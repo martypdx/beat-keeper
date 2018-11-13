@@ -3,11 +3,18 @@ import StartForm from '../apps/start-form.js';
 
 function makeTemplate() {
     return html`
+    <nav>
+        <div>
+            <a href="../../index.html">Home</a>
+        </div>
+        <div>
+            <a href="../../index.html">About The Devs</a>
+        </div>
+    </nav>
     <div id="form">
     <!--<div>
         <img src="../../assets/speaker.jpg" class="speaker" id="speakerLeft">
         </div> -->
-
         <div>
             <img src="../../assets/speaker.jpg" class="speaker" id="speakerRight">
         </div>
