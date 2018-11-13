@@ -37,7 +37,7 @@ export default class SoundSelectForm {
             };
             console.log(userData);
 
-            userData.add(userData);
+            // userData.add(userData);
             
 
             window.location = './song-result.html';
