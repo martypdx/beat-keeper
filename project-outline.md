@@ -1,0 +1,1 @@
+[Project Wireframe Snapshot](/assets/wireframe-dev.jpg)
