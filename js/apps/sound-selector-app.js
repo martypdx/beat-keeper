@@ -4,6 +4,14 @@ import SoundSelectForm from '../apps/sound-select-form.js';
 
 function makeTemplate() {
     return html`
+    <nav>
+        <div>
+            <a href="../../index.html">Home</a>
+        </div>
+        <div>
+            <a href="../../index.html">About The Devs</a>
+        </div>
+    </nav>  
     <div id="form"></div>
     `;
 }

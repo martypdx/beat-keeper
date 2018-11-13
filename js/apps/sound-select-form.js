@@ -1,7 +1,7 @@
 import html from '../helper/html.js';
 
 function makeTemplate() {
-    return html`
+    return html`  
     <form id="sound-select-form">
     <h1>Select the Samples to add</h1>
         <fieldset id="sample1-fieldset">

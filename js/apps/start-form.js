@@ -21,7 +21,7 @@ function makeTemplate() {
     </fieldset>
     </form>
     `;
-};
+}
 
 export default class StartForm {
     constructor(form) {
