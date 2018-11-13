@@ -1,8 +1,9 @@
 import html from './html.js';
-import addUserData from '.js';
+import userApi from './user-api.js';
+
+const userData = userApi.getAll();
 
 console.log(userData);
-
 // function makeTemplate() {
 //     return html`
 //     <form id="start-page">

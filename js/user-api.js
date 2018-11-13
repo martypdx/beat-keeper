@@ -1,24 +1,23 @@
 
-const addUserData = {
-    init: function() {
-        const form = document.getElementById('start-page');
+let users = [];
 
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            // console.log('test');
-            const elements = form.elements;
+function saveData() {
+    localStorage.setItem('users', JSON.stringify(users));
+}
 
-            const userData = {
-                username: elements.username.value
-                            //  genre: elements.genre.value
-                            //  beatsarray: []
-            };
-            console.log(userData.username);
-            // addUserData.init();
-        });
+const userApi = {
+    getAll() {
+        const json = localStorage.getItem('users');
+        if(json) {
+            users = JSON.parse(json);
+        }
+        return users;
+    },
+    add(user) {
+        users.push(user);
+
+        saveData();
     }
 };
 
-addUserData.init();
-
-// export default addUserData;
+export default userApi;
