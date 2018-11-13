@@ -6,10 +6,10 @@ function makeTemplate() {
     return html`
     <nav>
         <div>
-            <a href="./beat-keeper/index.html">Home</a>
+            <a href="./index.html">Home</a>
         </div>
         <div>
-            <a href="./beat-keeper/about-us.html">About The Devs</a>
+            <a href="./about-us.html">About The Devs</a>
         </div>
     </nav>  
     <div id="form"></div>
