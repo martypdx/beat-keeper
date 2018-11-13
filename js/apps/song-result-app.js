@@ -19,8 +19,16 @@ function makeTemplate() {
             <a href="./about-us.html">About The Devs</a>
         </div>
     </nav>  
-        <audio controls> <!-- loop autoplay -->
-            <source src="./assets/testaudio.mp3" type="audio/mpeg">
+        <audio controls> <!-- loop autoplay hidden -->
+            <source src="./assets/kick-drum.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <audio controls>
+            <source src="./assets/snare-drum.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <audio controls>
+            <source src="./assets/percussion.mp3" type="audio/mpeg">
             Your browser does not support the audio tag.
         </audio>
     `;
