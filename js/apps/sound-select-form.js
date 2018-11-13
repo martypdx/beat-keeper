@@ -1,4 +1,5 @@
 import html from '../helper/html.js';
+import userDataApi from '../services/user-api.js';
 
 function makeTemplate() {
     return html`
@@ -6,19 +7,18 @@ function makeTemplate() {
     <h1>Select the Samples to add</h1>
         <fieldset id="sample1-fieldset">
             <label for="sample1">Sample 1</label>
-            <input type="checkbox" name="sample1" id="sample1">
+            <input type="checkbox" name="sample1" id="sample1" checked>
         </fieldset>
         <fieldset id="sample2-fieldset">
             <label for="sample2">Sample 2</label>
-            <input type="radio" name="sample2">
+            <input type="checkbox" name="sample2" id="sample2" value="sample2" checked >
         </fieldset>
         <button type="submit">Submit</button>
     </form>
     `;
 }
 
-var userSettings = JSON.parse(localStorage.getItem('userSettings')) || [];
-
+let submit = 0;
 export default class SoundSelectForm {
     constructor(form) {
         this.form = form;
@@ -26,33 +26,19 @@ export default class SoundSelectForm {
     render() {
         const dom = makeTemplate();
         const form = dom.getElementById('sound-select-form');
-        // const fieldset1 = dom.getElementById('sample1-fieldset');
-        // const fieldset2 = dom.getElementById('sample2-fieldset');
-        // const checkBox = dom.querySelector('input[type=checkbox]');
-        // const radio = dom.querySelector('input[type=radio]');
-
-        // fieldset2.classList.add('hidden');
-
-        // checkBox.addEventListener('click', function() {
-        //     if(checkBox.checked) {
-        //         // console.log('checked!');
-        //         fieldset1.classList.add('hidden');
-        //         fieldset2.classList.remove('hidden'); 
-        //     } else {
-        //         // console.log('unchecked!');
-        //     }
-        // });
 
         form.addEventListener('submit', function(event) {
             event.preventDefault();
+            submit++;
             const elements = form.elements;
             const userData = {
-                sample1: elements.sample1.value,
-                sample2: elements.sample2.value
+                sample1: elements.sample1.checked,
+                sample2: elements.sample2.checked
             };
+            console.log(userData);
 
-            userSettings.push(userData);
-            localStorage.setItem('userSettings', JSON.stringify(userSettings));
+            userData.add(userData);
+            
 
             window.location = './song-result.html';
 

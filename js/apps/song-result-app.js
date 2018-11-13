@@ -1,5 +1,13 @@
 import html from '../helper/html.js';
 
+var data = JSON.parse(localStorage.getItem('userSettings'));
+console.log(data.sample1);
+
+
+
+    
+
+
 
 function makeTemplate() {
     return html`
