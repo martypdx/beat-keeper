@@ -44,7 +44,7 @@ body {
     border-radius: 12px;
     position: absolute;
     left: 45%;
-    top: 42%; 
+    top: 60%; 
 }
 
 #sample1-fieldset {
@@ -58,6 +58,12 @@ body {
     position: absolute;
     left:40%;
     top:35%;
+}
+
+#sample3-fieldset {
+    position: absolute;
+    left:40%;
+    top:45%;
 }
 
 #header {
