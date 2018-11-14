@@ -6,11 +6,11 @@ function makeTemplate() {
     <form id="sound-select-form">
     <h1 id = "header">CHOOSE YOUR FIRST SOUND</h1>
         <fieldset id="sample1-fieldset">
-            <label class = "neon" for="sample1">Kick-drum</label>
+            <label class="neon" for="sample1">Kick-drum</label>
             <input type="checkbox" name="sample1" id="sample1" checked>
         </fieldset>
         <fieldset id="sample2-fieldset">
-            <label class = "neon" for="sample2">Percussion</label>
+            <label class="neon" for="sample2">Percussion</label>
             <input type="checkbox" name="sample2" id="sample2" value="sample2" checked >
         </fieldset>
         <button type="submit">Submit</button>
