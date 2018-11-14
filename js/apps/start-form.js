@@ -1,5 +1,6 @@
 import html from '../helper/html.js';
 import userDataApi from '../services/user-api.js';
+import userInfoApi from '../services/user-info-api.js';
 
 
 function makeTemplate() {
@@ -39,7 +40,7 @@ export default class StartForm {
                 genre: elements.genre.value
             };
 
-            userDataApi.add(userData);
+            userInfoApi.add(userData);
             window.location = './sound-selection.html';
 
             // form.reset();
