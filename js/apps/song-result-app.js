@@ -46,11 +46,14 @@ export default class SongResultApp {
     render() {
         let value;
         if(data.sample1 === true) {
-            // console.log('true');
-            // console.log(data.sample1); // true or false
             value = '../assets/kick-drum.mp3';
             samplesApi.add(value);
         }
+        else if(data.sample2 === true) {
+            value = '../assets/percussion.mp3';
+            samplesApi.add(value);
+        }
+
         else {
             console.log('false');
         }
