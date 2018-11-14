@@ -13,8 +13,8 @@ function makeTemplate() {
     <label class="neon-label" for="genre">genre:</label>
             <select id="music-genre" name="genre" required>
                 <option value="" disabled selected>Select a genre</option>
-                <option value="rock">Rock</option>
-                <option value="hip-hop">Hip Hop</option>
+                <option value="sound-selection.html">Rock</option>
+                <option value="hey">Hip Hop</option>
             </select>
             <button type="submit" id="button-start-form">Submit</button>
     <!--</fieldset>-->
@@ -30,6 +30,8 @@ export default class StartForm {
         const dom = makeTemplate();
         const form = dom.getElementById('user-form');
 
+
+
         form.addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -41,7 +43,10 @@ export default class StartForm {
             };
 
             userInfoApi.add(userData);
-            window.location = './sound-selection.html';
+
+
+            window.location = userData.genre;  
+            //  './sound-selection.html';
 
             // form.reset();
 
