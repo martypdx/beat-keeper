@@ -74,33 +74,33 @@ label.neon-label {
     margin: 15px;
     border-radius: 12px;
     position: absolute;
-    left: 45%;
-    top: 60%; 
+    left: 40%;
+    top: 38.5%;
 }
 
 #sample1-fieldset {
     position: absolute;
     left: 40%;
-    top:25%;
+    top: 25%;
     
 }
 
 #sample2-fieldset {
     position: absolute;
-    left:40%;
-    top:35%;
+    left: 40%;
+    top: 30%;
 }
 
 #sample3-fieldset {
     position: absolute;
-    left:40%;
-    top:45%;
+    left: 40%;
+    top: 35%;
 }
 
 #header {
-    position: absolute;
-    left:30%;
-    top:12%;
+    text-align:center;
+    left: 30%;
+    top: 12%;
 }
 
 @media screen and (min-width: 685px) {
