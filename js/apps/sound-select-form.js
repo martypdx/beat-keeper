@@ -4,13 +4,13 @@ import userData from '../services/user-api.js';
 function makeTemplate() {
     return html`  
     <form id="sound-select-form">
-    <h1>Select the Samples to add</h1>
+    <h1 id = "header">CHOOSE YOUR FIRST SOUND</h1>
         <fieldset id="sample1-fieldset">
-            <label for="sample1">Sample 1</label>
+            <label class="neon" for="sample1">Kick-drum</label>
             <input type="checkbox" name="sample1" id="sample1" checked>
         </fieldset>
         <fieldset id="sample2-fieldset">
-            <label for="sample2">Sample 2</label>
+            <label class="neon" for="sample2">Percussion</label>
             <input type="checkbox" name="sample2" id="sample2" value="sample2" checked >
         </fieldset>
         <button type="submit">Submit</button>

@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box
+
+}
+
+body {
+    background-color: black;
+    color:pink;
+}
+
+.neon
+{
+   position: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin: 0;
+   padding: 0 20px;
+   font-size: 1.5em;
+   color: #fff;
+   text-shadow: 0 0 20px #ff005b;
+}
+
+.neon:after
+{
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 0 20px;
+   z-index: -1;
+   color: #ff005b;
+}
+
+button {
+    margin: 15px;
+    border-radius: 12px;
+    position: absolute;
+    left: 45%;
+    top: 42%; 
+}
+
+#sample1-fieldset {
+    position: absolute;
+    left: 40%;
+    top:25%;
+    
+}
+
+#sample2-fieldset {
+    position: absolute;
+    left:40%;
+    top:35%;
+}
+
+#header {
+    position: absolute;
+    left:30%;
+    top:12%;
+}
+
+@media screen and (min-width: 685px) {
+    /* make columns  */
+
+}
+
