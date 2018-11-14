@@ -1,5 +1,10 @@
 import html from '../helper/html.js';
 // import samplesApi from '../services/samples-api.js';
+import Header from '../header.js';
+    
+
+
+
 
 
 var data = JSON.parse(localStorage.getItem('userSettings'));
@@ -10,34 +15,14 @@ var data = JSON.parse(localStorage.getItem('userSettings'));
 // console.log(value.length);
 
 
-function makeTemplate(value) {
+function makeTemplate() {
     return html`
-    <nav>
-        <div>
-            <a href="./index.html">Home</a>
-        </div>
-        <div>
-            <a href="./about-us.html">About The Devs</a>
-        </div>
-    </nav>
+    <header>
+    </header>
+    
     <br>
     <a href="./sound-selection.html"><button>Back</button></a>
-    <!--<audio controls>
-        <source src=${value} type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>-->
-        <!--<audio controls loop autoplay hidden>
-            <source src="./assets/kick-drum.mp3" type="audio/mpeg">
-            Your browser does not support the audio tag.
-        </audio>-->
-        <!--<audio controls>
-            <source src="./assets/snare-drum.mp3" type="audio/mpeg">
-            Your browser does not support the audio tag.
-        </audio>-->
-        <!--<audio controls>
-            <source src="./assets/percussion.mp3" type="audio/mpeg">
-            Your browser does not support the audio tag.
-        </audio>-->
+  
         
     `;
 }
@@ -73,6 +58,8 @@ function playSample3() {
 
 export default class SongResultApp {
     render() {
+     
+
         let value;
         // if(data.sample1 === true) {
         //     // value = '../assets/200bpm-kick.mp3';
@@ -112,6 +99,9 @@ export default class SongResultApp {
         }
 
         const dom = makeTemplate(value);
+        const headerSection = dom.querySelector('header');
+        const header = new Header();
+        headerSection.appendChild(header.render());
 
         return dom;
     }
