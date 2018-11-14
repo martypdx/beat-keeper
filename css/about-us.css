@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 
-#sitewide-header
-{
-    border: 2px;
-    border-color: #fff;
-    font-size: 1em;
-    color: rgb(rgb(17, 255, 69));
-    text-align: center;
-}
-
 body
 {
    margin: 0;
