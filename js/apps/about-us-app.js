@@ -1,26 +1,21 @@
 import html from '../helper/html.js';
+import Header from '../header.js';
 
 function makeTemplate() {
     return html`
-    <nav id="nav">
-        <div>
-            <div class="nav" id="home">
-                <a href="./index.html">Home</a>
-            </div>
-            <div class="nav" id="titled">
-                Beat-Keeper
-            </div>
-            <div class="nav" id="about-link">
-                <a href="./about-us.html">About The Devs</a>
-            </div>
-        </div>
-    </nav>
+    <header></header>
     `;
 }
 
 export default class AboutApp {
     render() {
         const dom = makeTemplate();
+
+        const headerSection = dom.querySelector('header');
+
+        const header = new Header();
+
+        headerSection.appendChild(header.render());
 
         return dom;
     }

@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 
 
-.head 
-{
-  background-image: url('../assets/neon-pic.jpg');
-  border: 2px solid #76ff03;
-  padding: 3px;
-  margin: 2px;
+.head {
+   background-size: cover;
+   background-image: url('../assets/neon-pic.jpg');
+   border: 2px solid #76ff03;
+   padding: 3px;
+   margin: 2px;
 }
 
-#home
-{
+#home {
    display: inline-flex;
    float: left;
    font-size: 3em;
@@ -18,8 +17,7 @@
    padding: 10px;
 }
 
-#titled
-{
+#titled {
    display: inline-flex;
    float: center;
    font-size: 5em;
@@ -29,8 +27,7 @@
    padding: 20px;
 }
 
-#about-link
-{
+#about-link {
    display: inline-flex;
    float: right;
    font-size: 3em;
@@ -144,4 +141,12 @@ main
    font-size: 2em;
    font-weight: bold;
    text-align: center;
+}
+
+a.nav-links {
+   color: green;
+}
+
+a.nav-links:hover {
+   color: red;
 }
