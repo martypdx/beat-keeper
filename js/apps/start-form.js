@@ -1,23 +1,23 @@
 import html from '../helper/html.js';
-import userDataApi from '../services/user-api.js';
+// import userDataApi from '../services/user-api.js';
 import userInfoApi from '../services/user-info-api.js';
 
 
 function makeTemplate() {
     return html`
     <form id="user-form">
-    <label class="neon">beat-keeper</label>
-    <fieldset>
-    <label class="neon" for="username">username:</label>
+    <!--<label class="neon">beat-keeper</label>-->
+    <!--<fieldset>-->
+    <label class="neon-label" for="username">username:</label>
     <input type="text" name="username" required>
-    <label class="neon" for="genre">genre:</label>
+    <label class="neon-label" for="genre">genre:</label>
             <select id="music-genre" name="genre" required>
                 <option value="" disabled selected>Select a genre</option>
                 <option value="rock">Rock</option>
                 <option value="hip-hop">Hip Hop</option>
             </select>
             <button type="submit" id="button-start-form">Submit</button>
-    </fieldset>
+    <!--</fieldset>-->
     </form>
     `;
 }

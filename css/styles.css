@@ -3,9 +3,40 @@
 
 }
 
+nav {
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+fieldset.flex-center {
+}
+
+a.nav-links {
+    color: green;
+}
+
+a.nav-links:hover {
+    color: red;
+}
+
+div.header-div {
+    display: block;
+    justify-content: center;
+}
+
+
+img.logo {
+    /* width: 60%; */
+}
+
 body {
     background-color: black;
     color:pink;
+}
+
+label.neon-label {
+    font-size: 20px;
+    padding: 12px;
 }
 
 .neon
