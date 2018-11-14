@@ -16,7 +16,7 @@ function makeTemplate() {
                 <option value="rock">Rock</option>
                 <option value="hip-hop">Hip Hop</option>
             </select>
-            <button type="submit">Submit</button>
+            <button type="submit" id="button-start-form">Submit</button>
     </fieldset>
     </form>
     `;

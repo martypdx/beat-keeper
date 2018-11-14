@@ -32,7 +32,14 @@ body {
    color: #ff005b;
 }
 
-button {
+#button-start-form {
+    margin: 15px;
+    border-radius: 12px;
+    left: 45%;
+    top: 42%; 
+}
+
+#button-sound-select {
     margin: 15px;
     border-radius: 12px;
     position: absolute;

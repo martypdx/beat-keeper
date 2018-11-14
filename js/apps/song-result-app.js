@@ -44,11 +44,11 @@ export default class SongResultApp {
     render() {
         let value;
         if(data.sample1 === true) {
-            value = '../assets/kick-drum.mp3';
+            value = './assets/kick-drum.mp3';
             samplesApi.add(value);
         }
         else if(data.sample2 === true) {
-            value = '../assets/percussion.mp3';
+            value = './assets/percussion.mp3';
             samplesApi.add(value);
         }
 

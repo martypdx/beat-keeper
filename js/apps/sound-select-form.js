@@ -13,7 +13,7 @@ function makeTemplate() {
             <label class="neon" for="sample2">Percussion</label>
             <input type="checkbox" name="sample2" id="sample2" value="sample2" checked >
         </fieldset>
-        <button type="submit">Submit</button>
+        <button type="submit" id="button-sound-select">Submit</button>
     </form>
     `;
 }

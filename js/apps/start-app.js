@@ -21,7 +21,7 @@ function makeTemplate() {
         </div>-->
     </div>
     <br>
-    <img src="../assets/speaker.jpg" class="speaker" id="speakerLeft">
+    <img src="./assets/speaker.jpg" class="speaker" id="speakerLeft">
     `;
 }
 
