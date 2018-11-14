@@ -3,8 +3,6 @@ import samplesApi from '../services/samples-api.js';
 
 
 var data = JSON.parse(localStorage.getItem('userSettings'));
-// console.log(data.sample1);
-// console.log(data);
 
 const value = samplesApi.getAll();
 console.log(value);
@@ -46,20 +44,21 @@ export default class SongResultApp {
     //     this.sample = sample;
     // }
     render() {
-        const dom = makeTemplate();
-        // const mp3array = [];
-        
+        let value;
         if(data.sample1 === true) {
-            // console.log('true');
-            // console.log(data.sample1); // true or false
-            const value = '../assets/kick-drum.mp3';
+            value = '../assets/kick-drum.mp3';
             samplesApi.add(value);
-            // dom.appendChild(value);
         }
+        else if(data.sample2 === true) {
+            value = '../assets/percussion.mp3';
+            samplesApi.add(value);
+        }
+
         else {
             console.log('false');
         }
-
+        
+        const dom = makeTemplate(value);
         return dom;
     }
 }

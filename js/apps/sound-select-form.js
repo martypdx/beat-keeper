@@ -9,10 +9,10 @@ function makeTemplate() {
             <label for="sample1">Sample 1</label>
             <input type="checkbox" name="sample1" id="sample1" checked>
         </fieldset>
-        <!--<fieldset id="sample2-fieldset">
+        <fieldset id="sample2-fieldset">
             <label for="sample2">Sample 2</label>
             <input type="checkbox" name="sample2" id="sample2" value="sample2" checked >
-        </fieldset>-->
+        </fieldset>
         <button type="submit">Submit</button>
     </form>
     `;
@@ -34,9 +34,8 @@ export default class SoundSelectForm {
             const elements = form.elements;
             const data = {
                 sample1: elements.sample1.checked,
-                // sample2: elements.sample2.checked
+                sample2: elements.sample2.checked
             };
-            console.log(userData);
 
             userData.add(data);
             

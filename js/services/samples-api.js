@@ -1,16 +1,16 @@
 let samples = [];
 
 
-function saveSample(sample) {
-    localStorage.setItem('samples', JSON.stringify(sample));
+function saveSample(samples) {
+    localStorage.setItem('samples', JSON.stringify(samples));
 }
 
 const samplesApi = {
     add(sample) {
-        // 1. add to our array
+        this.getAll();
+        console.log(samples);
         samples.push(sample);
-        // 2. save array to localStorage
-        saveSample(sample);
+        saveSample(samples);
     },
     getAll() {
         const json = localStorage.getItem('samples');
