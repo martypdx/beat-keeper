@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
 * {
     box-sizing: border-box
-
 }
 
-nav {
-    /* display: flex;
-    justify-content: space-evenly; */
+/* nav {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 fieldset.flex-center {
+} */
+html {
+    font-family: 'Quicksand', sans-serif;
 }
 
 a.nav-links {
@@ -39,8 +43,7 @@ label.neon-label {
     padding: 12px;
 }
 
-.neon
-{
+.neon {
    position: center;
    top: 50%;
    left: 50%;
@@ -52,8 +55,7 @@ label.neon-label {
    text-shadow: 0 0 20px #ff005b;
 }
 
-.neon:after
-{
+.neon:after {
    content: attr(data-text);
    position: absolute;
    top: 0;
@@ -75,36 +77,34 @@ label.neon-label {
     border-radius: 12px;
     position: absolute;
     left: 40%;
-    top: 38.5%;
+    top: 70%;
 }
 
 #sample1-fieldset {
     position: absolute;
     left: 40%;
-    top: 25%;
-    
+    top: 40%;
 }
 
 #sample2-fieldset {
     position: absolute;
     left: 40%;
-    top: 30%;
+    top: 50%;
 }
 
 #sample3-fieldset {
     position: absolute;
     left: 40%;
-    top: 35%;
+    top: 60%;
 }
 
 #header {
     text-align:center;
-    left: 30%;
-    top: 12%;
+    /* left: 30%;
+    top: 12%; */
 }
 
 @media screen and (min-width: 685px) {
     /* make columns  */
-
 }
 

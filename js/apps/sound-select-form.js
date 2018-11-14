@@ -4,7 +4,7 @@ import userData from '../services/user-api.js';
 function makeTemplate() {
     return html`
     <form id="sound-select-form">
-    <h1 id = "header">CHOOSE YOUR FIRST SOUND</h1>
+    <h1 id = "header">Choose your sounds</h1>
         <fieldset id="sample1-fieldset">
             <label class="neon" for="sample1">Kick</label>
             <input type="checkbox" name="sample1" id="sample1">
