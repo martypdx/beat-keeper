@@ -2,32 +2,124 @@
 
 .head 
 {
-  background-image: image('../assets/neon-pic.jpg');
+  background-image: url('../assets/neon-pic.jpg');
+  border: 2px solid #76ff03;
+  padding: 3px;
+  margin: 2px;
+}
+
+#home
+{
+   display: inline-flex;
+   float: left;
+   font-size: 3em;
+   margin: 20px;
+   padding: 10px;
+}
+
+#titled
+{
+   display: inline-flex;
+   float: center;
+   font-size: 5em;
+   color: solid #76ff03;
    border: 2px solid #76ff03;
-  padding: 25px;
-  margin: 10px;
+   margin: 10px;
+   padding: 20px;
 }
 
-.home
+#about-link
 {
-   display: flex;
-   justify-content: space-evenly;
-   /* text-align: left; */
-   font-size: 2em;
-   padding: 5px;
+   display: inline-flex;
+   float: right;
+   font-size: 3em;
+   margin: 20px;
+   padding: 10px;
 }
 
-.about
+.nav
 {
-   display: flex;
+   display: inline-flex;
    justify-content: space-evenly;
-   font-size: 2em;
-   padding: 5px;
+   font-size: 3em;
+   padding: 10px;
 }
 
-h2
+.names
+{
+   float: center;
+}
+
+#cari
+{
+   display: inline-flex;
+   width: 290px;
+   height: 100px;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 3px;
+   padding: 5px;
+   border: 2px #15e6f5;
+   font-size: 2em;
+   color: #fff;
+   text-shadow: 0 0 20px #ff005b;
+}
+
+#phoebe
+{
+   display: inline-flex;
+   width: 290px;
+   height: 100px;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 10px;
+   padding: 10px;
+   border: 2px #15e6f5;
+   font-size: 2em;
+   color: #fff;
+   text-shadow: 0 0 20px #ff005b;
+}
+
+#drew
+{
+   display: inline-flex;
+   width: 290px;
+   height: 100px;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 3px;
+   padding: 5px;
+   border: 2px #15e6f5;
+   font-size: 2em;
+   color: #fff;
+   text-shadow: 0 0 20px #ff005b;
+}
+
+#chris
+{
+   display: inline-flex;
+   width: 290px;
+   height: 100px;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 3px;
+   padding: 5px;
+   border: 2px #15e6f5;
+   font-size: 2em;
+   color: #fff;
+   text-shadow: 0 0 20px #ff005b;
+}
+
+h3
 {
    text-align: center;
+   font-size: 3em;
+   color: #fff;
+   text-shadow: 0 0 20px #ff005b;
 }
 
 body
@@ -41,7 +133,14 @@ body
 
 main
 {
-   font-size: 3em;
+   font-size: 1em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
+}
+
+#team
+{
+   font-size: 2em;
+   font-weight: bold;
+   text-align: center;
 }

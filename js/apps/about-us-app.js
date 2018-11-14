@@ -4,10 +4,13 @@ function makeTemplate() {
     return html`
     <nav id="nav">
         <div>
-            <div class="home">
+            <div class="nav" id="home">
                 <a href="./index.html">Home</a>
             </div>
-            <div class="about">
+            <div class="nav" id="titled">
+                Beat-Keeper
+            </div>
+            <div class="nav" id="about-link">
                 <a href="./about-us.html">About The Devs</a>
             </div>
         </div>
