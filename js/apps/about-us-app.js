@@ -2,12 +2,14 @@ import html from '../helper/html.js';
 
 function makeTemplate() {
     return html`
-    <nav>
+    <nav id="nav">
         <div>
-            <a href="./index.html">Home</a>
-        </div>
-        <div>
-            <a href="./about-us.html">About The Devs</a>
+            <div class="home">
+                <a href="./index.html">Home</a>
+            </div>
+            <div class="about">
+                <a href="./about-us.html">About The Devs</a>
+            </div>
         </div>
     </nav>
     `;
@@ -20,31 +22,3 @@ export default class AboutApp {
         return dom;
     }
 }
-
-// export default class AboutApp {                     //StartApp {
-//     render() {
-//         const dom = makeTemplate();
-
-//         const aboutHead = dom.getElementById('header'); //userForm/form
-
-//         const form = new StartForm(); //StartForm()
-
-//         aboutHead.appendChild(form.render());  //userForm/form
-
-//         return dom;
-//     }
-// }
-
-// export default class SoundSelectApp {
-//     render() {
-//         const dom = makeTemplate();
-
-//         const userForm = dom.getElementById('form');
-
-//         const form = new SoundSelectForm();
-
-//         userForm.appendChild(form.render());
-
-//         return dom;
-//     }
-// }

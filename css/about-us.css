@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 
+.head 
+{
+  background-image: image('../assets/neon-pic.jpg');
+   border: 2px solid #76ff03;
+  padding: 25px;
+  margin: 10px;
+}
+
+.home
+{
+   display: flex;
+   justify-content: space-evenly;
+   /* text-align: left; */
+   font-size: 2em;
+   padding: 5px;
+}
+
+.about
+{
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 2em;
+   padding: 5px;
+}
+
+h2
+{
+   text-align: center;
+}
+
 body
 {
    margin: 0;
@@ -9,9 +39,8 @@ body
    font-family: 'Quicksand', sans-serif;
 }
 
-.main
+main
 {
-
    font-size: 3em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
