@@ -40,7 +40,6 @@ export default class StartForm {
                 genre: elements.genre.value
             };
 
-            userDataApi.add(userData);
             userInfoApi.add(userData);
             window.location = './sound-selection.html';
 
