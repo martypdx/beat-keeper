@@ -11,6 +11,7 @@ function makeTemplate() {
             <a href="./about-us.html">About The Devs</a>
         </div>
     </nav>
+    
     <div id="form">
     <!--<div>
         <img src="../../assets/speaker.jpg" class="speaker" id="speakerLeft">
@@ -19,6 +20,8 @@ function makeTemplate() {
             <img src="../../assets/speaker.jpg" class="speaker" id="speakerRight">
         </div>-->
     </div>
+    <br>
+    <img src="../../assets/speaker.jpg" class="speaker" id="speakerLeft">
     `;
 }
 
