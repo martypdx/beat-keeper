@@ -1,10 +1,14 @@
 import html from '../helper/html.js';
-import samplesApi from '../services/samples-api.js';
+// import samplesApi from '../services/samples-api.js';
+
 
 var data = JSON.parse(localStorage.getItem('userSettings'));
 
-const value = samplesApi.getAll();
-console.log(value);
+// const value = samplesApi.getAll();
+// eslint-disable-next-line
+// console.log(value);
+// console.log(value.length);
+
 
 function makeTemplate(value) {
     return html`
@@ -16,10 +20,12 @@ function makeTemplate(value) {
             <a href="./about-us.html">About The Devs</a>
         </div>
     </nav>
-    <audio controls>
+    <br>
+    <a href="./sound-selection.html"><button>Back</button></a>
+    <!--<audio controls>
         <source src=${value} type="audio/mpeg">
         Your browser does not support the audio tag.
-    </audio>
+    </audio>-->
         <!--<audio controls loop autoplay hidden>
             <source src="./assets/kick-drum.mp3" type="audio/mpeg">
             Your browser does not support the audio tag.
@@ -32,31 +38,81 @@ function makeTemplate(value) {
             <source src="./assets/percussion.mp3" type="audio/mpeg">
             Your browser does not support the audio tag.
         </audio>-->
+        
     `;
 }
 
+function playSample1() {
+    var x = document.createElement('AUDIO');
+    x.setAttribute('src', 'assets/kick-drum.mp3');
+    x.setAttribute('controls', 'controls');
+    x.setAttribute('autoplay', 'autoplay');
+    x.setAttribute('loop', 'loop');
+    // x.setAttribute('hidden', 'hidden');
+    document.body.appendChild(x);
+}
+function playSample2() {
+    var x = document.createElement('AUDIO');
+    x.setAttribute('src', 'assets/snare-drum.mp3');
+    x.setAttribute('controls', 'controls');
+    x.setAttribute('autoplay', 'autoplay');
+    x.setAttribute('loop', 'loop');
+    // x.setAttribute('hidden', 'hidden');
+    document.body.appendChild(x);
+}
+function playSample3() {
+    var x = document.createElement('AUDIO');
+    x.setAttribute('src', 'assets/percussion.mp3');
+    x.setAttribute('controls', 'controls');
+    x.setAttribute('autoplay', 'autoplay');
+    x.setAttribute('loop', 'loop');
+    // x.setAttribute('hidden', 'hidden');
+    document.body.appendChild(x);
+}
 
 
 export default class SongResultApp {
-    // constructor(sample) {
-    //     this.sample = sample;
-    // }
     render() {
         let value;
-        if(data.sample1 === true) {
-            value = './assets/kick-drum.mp3';
-            samplesApi.add(value);
+        // if(data.sample1 === true) {
+        //     // value = '../assets/200bpm-kick.mp3';
+        //     // samplesApi.add(value);
+        //     playSample1();
+        // }
+        // else if(data.sample1 !== true) {
+        //     // value = '../assets/200bpm-snare.mp3';
+        //     // samplesApi.add(value);
+        //     playSample2();
+        // }
+        if(data.sample1 === true && data.sample2 === false && data.sample3 === false) {
+            playSample1();
         }
-        else if(data.sample2 === true) {
-            value = './assets/percussion.mp3';
-            samplesApi.add(value);
+        if(data.sample2 === true && data.sample1 === false && data.sample3 === false) {
+            playSample2();
+        }
+        if(data.sample3 === true && data.sample1 === false && data.sample2 === false) {
+            playSample3();
+        }
+        if(data.sample1 === true && data.sample3 === true && data.sample2 === false) {
+            playSample1();
+            playSample3();
+        }
+        if(data.sample1 === true && data.sample2 === true && data.sample3 === false) {
+            playSample1();
+            playSample2();
+        }
+        if(data.sample2 === true && data.sample3 === true && data.sample1 === false) {
+            playSample2();
+            playSample3();
+        }
+        if(data.sample1 && data.sample2 && data.sample3 === true) {
+            playSample1();
+            playSample2();
+            playSample3();
         }
 
-        else {
-            console.log('false');
-        }
-        
         const dom = makeTemplate(value);
+
         return dom;
     }
 }
