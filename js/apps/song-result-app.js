@@ -1,12 +1,10 @@
 import html from '../helper/html.js';
 import samplesApi from '../services/samples-api.js';
 
-
 var data = JSON.parse(localStorage.getItem('userSettings'));
 
 const value = samplesApi.getAll();
 console.log(value);
-
 
 function makeTemplate(value) {
     return html`
