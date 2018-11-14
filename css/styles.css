@@ -28,6 +28,9 @@ div.header-div {
     justify-content: center;
 }
 
+span.nav-right {
+    float: right;
+}
 
 img.logo {
     /* width: 60%; */
@@ -77,25 +80,25 @@ label.neon-label {
     border-radius: 12px;
     position: absolute;
     left: 40%;
-    top: 70%;
+    top: 65%;
 }
 
 #sample1-fieldset {
     position: absolute;
     left: 40%;
-    top: 40%;
+    top: 35%;
 }
 
 #sample2-fieldset {
     position: absolute;
     left: 40%;
-    top: 50%;
+    top: 45%;
 }
 
 #sample3-fieldset {
     position: absolute;
     left: 40%;
-    top: 60%;
+    top: 55%;
 }
 
 #header {

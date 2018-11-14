@@ -3,12 +3,9 @@ import SoundSelectForm from '../apps/sound-select-form.js';
 import Header from '../header.js';
 
 
-
 function makeTemplate() {
     return html`
-    <header>
-    
-    </header>
+    <header></header>
     <div id="form"></div>
     `;
 }
