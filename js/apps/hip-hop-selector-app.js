@@ -28,8 +28,6 @@ export default class HipHopSelectApp {
 
         headerSection.appendChild(header.render());
 
-        console.log(headerSection);
-
         return dom;
     }
 }
