@@ -1,31 +1,17 @@
 import html from '../helper/html.js';
-// import samplesApi from '../services/samples-api.js';
 import Header from '../header.js';
-    
-
-
-
-
 
 var data = JSON.parse(localStorage.getItem('userSettings'));
 
-// const value = samplesApi.getAll();
-// eslint-disable-next-line
-// console.log(value);
-// console.log(value.length);
-
-
 function makeTemplate() {
     return html`
-    <header>
-    </header>
-    
-    <br>
-    <a href="./sound-selection.html"><button>Back</button></a>
-  
-        
+    <header></header>
+    <!--<button type="button" onclick="javascript:history.back()">Back</button>-->
+    <!--<a href="javascript:history.back()">Go Back</a>-->
     `;
 }
+
+
 //WE HAVE 3 FUNCTIONS DOING SAME THING!! CREATE A CLASS?
 function playSample1() {
     var x = document.createElement('AUDIO');
