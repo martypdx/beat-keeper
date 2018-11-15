@@ -6,16 +6,16 @@ function makeTemplate() {
     <form id="edm-select-form">
     <h1 id = "header">Choose your sounds</h1>
         <fieldset id="sample1-fieldset">
-            <label class="neon" for="sample1">Kick</label>
-            <input type="checkbox" name="sample1" id="sample1">
+            <label class="neon" for="sample7">Kick</label>
+            <input type="checkbox" name="sample7" id="sample7">
         </fieldset>
         <fieldset id="sample2-fieldset">
-            <label class="neon" for="sample2">Snare</label>
-            <input type="checkbox" name="sample2" id="sample2">
+            <label class="neon" for="sample8">Snare</label>
+            <input type="checkbox" name="sample8" id="sample8">
         </fieldset>
         <fieldset id="sample3-fieldset">
-            <label class="neon" for="sample3">Percussion</label>
-            <input type="checkbox" name="sample3" id="sample3">
+            <label class="neon" for="sample9">Percussion</label>
+            <input type="checkbox" name="sample9" id="sample9">
         </fieldset>
         <button type="submit" id="button-sound-select">Submit</button>
     </form>
@@ -35,18 +35,18 @@ export default class EdmSelectForm {
             // submit++;
             const elements = form.elements;
             const data = {
-                sample1: elements.sample1.checked,
-                sample2: elements.sample2.checked,
-                sample3: elements.sample3.checked
+                sample7: elements.sample7.checked,
+                sample8: elements.sample8.checked,
+                sample9: elements.sample9.checked
             };
 
-            if(data.sample1 === false && data.sample2 === false && data.sample3 === false){
+            if(data.sample7 === false && data.sample8 === false && data.sample9 === false){
                 alert ('Please select at least one');
             }
             else {
                 userData.add(data);
 
-                window.location = './song-result.html';
+                window.location = './edm-song-result.html';
             }
 
         });
