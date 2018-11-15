@@ -11,7 +11,7 @@ function makeTemplate() {
         <fieldset class="flex-center">
         <a class="nav-links" href="./">Home</a>
         <a class="nav-links" href="about-us.html">About Us</a>
-        <span class="nav-right"></span>
+        <span class="nav-right">user: <span class="user"></span></span>
         </fieldset>
     </nav>
     </div>
@@ -22,7 +22,7 @@ class Header {
     render() {
         const dom = makeTemplate();
 
-        const user = dom.querySelector('span');
+        const user = dom.querySelector('.user');
         user.textContent = localStorage.getItem('username', userData.username);
 
         return dom;
