@@ -2,13 +2,11 @@ import html from '../helper/html.js';
 import Header from '../header.js';
 
 var data = JSON.parse(localStorage.getItem('userSettings'));
-console.log(data);
+// console.log(data);
 
 function makeTemplate() {
     return html`
     <header></header>
-    <!--<button type="button" onclick="javascript:history.back()">Back</button>-->
-    <!--<a href="javascript:history.back()">Go Back</a>-->
     `;
 }
 
@@ -31,10 +29,9 @@ export function playSample(audio, gif) {
 
 export default class SongResultApp {
     render() {
-     
 
         let value;
-    
+
         if(data.sample1 === true && data.sample2 === false && data.sample3 === false) {
             //sample1, just the kick
             playSample('assets/kick-drum.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');

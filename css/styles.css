@@ -87,23 +87,6 @@ input[type=checkbox] {
 select {
     background-color: white;
 }
-/* #sample1-fieldset {
-    position: absolute;
-    left: 40%;
-    top: 45%;
-}
-
-#sample2-fieldset {
-    position: absolute;
-    left: 40%;
-    top: 55%;
-}
-
-#sample3-fieldset {
-    position: absolute;
-    left: 40%;
-    top: 65%;
-} */
 
 #header {
     text-align:center;
@@ -123,8 +106,3 @@ img.song-results-img {
 audio::-webkit-media-controls-play-button {
     background-color: blue;
 } */
-
-
-
-@media screen and (min-width: 685px) {
-}

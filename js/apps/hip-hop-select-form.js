@@ -5,17 +5,17 @@ function makeTemplate() {
     return html`
     <form id="hip-hop-select-form">
     <h1 id = "header">Choose your sounds</h1>
-        <fieldset id="sample1-fieldset">
-            <label class="neon" for="sample1">Kick</label>
-            <input type="checkbox" name="sample1" id="sample1">
+        <fieldset id="sample4-fieldset">
+            <label class="neon" for="sample4">Kick</label>
+            <input type="checkbox" name="sample4" id="sample4">
         </fieldset>
-        <fieldset id="sample2-fieldset">
-            <label class="neon" for="sample2">Snare</label>
-            <input type="checkbox" name="sample2" id="sample2">
+        <fieldset id="sample5-fieldset">
+            <label class="neon" for="sample5">Snare</label>
+            <input type="checkbox" name="sample5" id="sample5">
         </fieldset>
-        <fieldset id="sample3-fieldset">
-            <label class="neon" for="sample3">Percussion</label>
-            <input type="checkbox" name="sample3" id="sample3">
+        <fieldset id="sample6-fieldset">
+            <label class="neon" for="sample6">Percussion</label>
+            <input type="checkbox" name="sample6" id="sample6">
         </fieldset>
         <button type="submit" id="button-sound-select">Submit</button>
     </form>
@@ -35,17 +35,17 @@ export default class HipHopSelectForm {
             // submit++;
             const elements = form.elements;
             const data = {
-                sample1: elements.sample1.checked,
-                sample2: elements.sample2.checked,
-                sample3: elements.sample3.checked
+                sample4: elements.sample4.checked,
+                sample5: elements.sample5.checked,
+                sample6: elements.sample6.checked
             };
-            if(data.sample1 === false && data.sample2 === false && data.sample3 === false){
+            if(data.sample4 === false && data.sample5 === false && data.sample6 === false){
                 alert ('Please select at least one');
             }
             else {
                 userData.add(data);
 
-                window.location = './song-result.html';
+                window.location = './hip-hop-song-result.html';
             }
 
         });
