@@ -1,6 +1,6 @@
 import html from '../helper/html.js';
-// import userDataApi from '../services/user-api.js';
 import userInfoApi from '../services/user-info-api.js';
+
 
 
 function makeTemplate() {
@@ -18,6 +18,10 @@ function makeTemplate() {
 
             </select>
             <button type="submit" id="button-start-form">Submit</button>
+
+        <p>LAST SONG:</p>
+
+
     </form>
     `;
 }
