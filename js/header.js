@@ -1,8 +1,6 @@
 import html from './helper/html.js';
 import userData from './services/user-api.js';
 
-// console.log(localStorage.getItem('username', userData.username));
-
 function makeTemplate() {
     return html`
     <div class="header-div">

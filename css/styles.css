@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 
-* {
-    box-sizing: border-box
+
+img.logo {
+    width: 60%;
 }
 
-/* nav {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-fieldset.flex-center {
-} */
 html {
     font-family: 'Quicksand', sans-serif;
 }
 
 a.nav-links {
     color: green;
+    margin: 10px;
 }
 
 a.nav-links:hover {
@@ -30,10 +25,6 @@ div.header-div {
 
 span.nav-right {
     float: right;
-}
-
-img.logo {
-    /* width: 60%; */
 }
 
 body {
@@ -78,12 +69,25 @@ label.neon-label {
 #button-sound-select {
     margin: 15px;
     border-radius: 12px;
-    position: absolute;
+    /* position: absolute; */
     left: 40%;
     top: 75%;
 }
 
-#sample1-fieldset {
+form#hip-hop-select-form, form#sound-select-form, form#edm-select-form, form#jazz-select-form {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type=checkbox] {
+    zoom: 1.5;
+}
+
+select {
+    background-color: white;
+}
+/* #sample1-fieldset {
     position: absolute;
     left: 40%;
     top: 45%;
@@ -99,7 +103,7 @@ label.neon-label {
     position: absolute;
     left: 40%;
     top: 65%;
-}
+} */
 
 #header {
     text-align:center;
@@ -107,7 +111,20 @@ label.neon-label {
     top: 12%; */
 }
 
-@media screen and (min-width: 685px) {
-    /* make columns  */
+img.song-results-img {
+    width: 100%;
 }
 
+/* style audio control: https://stackoverflow.com/questions/4126708/is-it-possible-to-style-html5-audio-tag */ 
+/* audio::-webkit-media-controls-panel {
+    background-color: red;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: blue;
+} */
+
+
+
+@media screen and (min-width: 685px) {
+}
