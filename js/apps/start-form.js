@@ -14,7 +14,7 @@ function makeTemplate() {
             <select id="music-genre" name="genre" required>
                 <option value="" disabled selected>Select a genre</option>
                 <option value="sound-selection.html">Rock</option>
-                <option value="hey">Hip Hop</option>
+                <option value="hip-hop-selection.html">Hip Hop</option>
             </select>
             <button type="submit" id="button-start-form">Submit</button>
     <!--</fieldset>-->

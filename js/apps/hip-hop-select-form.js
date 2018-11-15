@@ -3,7 +3,7 @@ import userData from '../services/user-api.js';
 
 function makeTemplate() {
     return html`
-    <form id="sound-select-form">
+    <form id="hip-hop-select-form">
     <h1 id = "header">Choose your sounds</h1>
         <fieldset id="sample1-fieldset">
             <label class="neon" for="sample1">Kick</label>
@@ -22,13 +22,13 @@ function makeTemplate() {
     `;
 }
 
-export default class SoundSelectForm {
+export default class HipHopSelectForm {
     constructor(form) {
         this.form = form;
     }
     render() {
         const dom = makeTemplate();
-        const form = dom.getElementById('sound-select-form');
+        const form = dom.getElementById('hip-hop-select-form');
 
         form.addEventListener('submit', function(event) {
             event.preventDefault();
