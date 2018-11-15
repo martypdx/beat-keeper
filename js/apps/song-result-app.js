@@ -26,7 +26,7 @@ function makeTemplate() {
         
     `;
 }
-
+//WE HAVE 3 FUNCTIONS DOING SAME THING!! CREATE A CLASS?
 function playSample1() {
     var x = document.createElement('AUDIO');
     x.setAttribute('src', 'assets/kick-drum.mp3');
@@ -35,6 +35,9 @@ function playSample1() {
     x.setAttribute('loop', 'loop');
     // x.setAttribute('hidden', 'hidden');
     document.body.appendChild(x);
+    var image = document.createElement('IMG');
+    image.setAttribute('src', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+    document.body.appendChild(image);
 }
 function playSample2() {
     var x = document.createElement('AUDIO');
@@ -44,6 +47,9 @@ function playSample2() {
     x.setAttribute('loop', 'loop');
     // x.setAttribute('hidden', 'hidden');
     document.body.appendChild(x);
+    var image = document.createElement('IMG');
+    image.setAttribute('src', 'assets/pizzacat.gif');
+    document.body.appendChild(image);
 }
 function playSample3() {
     var x = document.createElement('AUDIO');
@@ -53,6 +59,9 @@ function playSample3() {
     x.setAttribute('loop', 'loop');
     // x.setAttribute('hidden', 'hidden');
     document.body.appendChild(x);
+    var image = document.createElement('IMG');
+    image.setAttribute('src', 'assets/userprofile.gif');
+    document.body.appendChild(image);
 }
 
 
