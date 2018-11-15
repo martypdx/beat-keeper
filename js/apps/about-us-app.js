@@ -24,7 +24,7 @@ function makeTemplate() {
             <div id="drew">
                 Drew<br><span id=last>Van Valkenburg</span><br>
                 <img src="./assets/userprofile.gif" id="drews" alt="">
-                <p>Drew's texty texty texy text. Texty texty texty texty texty text!</p>
+                <p>When Drew isn't coding, he likes to play basketball and video games.</p>
             </div>
             <div id="chris">
                 <span id= first>Christina T.</span><br>Herlocker<br>
