@@ -39,10 +39,14 @@ export default class HipHopSelectForm {
                 sample2: elements.sample2.checked,
                 sample3: elements.sample3.checked
             };
+            if(data.sample1 === false && data.sample2 === false && data.sample3 === false){
+                alert ('Please select at least one');
+            }
+            else {
+                userData.add(data);
 
-            userData.add(data);
-
-            window.location = './song-result.html';
+                window.location = './song-result.html';
+            }
 
         });
         return dom;
