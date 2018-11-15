@@ -13,12 +13,15 @@
     right: 0;
 }
 
+
 .speaker {
     animation-name: myAnimation;
     animation-duration: .5s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
+
+
 
 @keyframes myAnimation {
     0% {
