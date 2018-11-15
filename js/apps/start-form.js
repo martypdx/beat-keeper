@@ -6,8 +6,6 @@ import userInfoApi from '../services/user-info-api.js';
 function makeTemplate() {
     return html`
     <form id="user-form">
-    <!--<label class="neon">beat-keeper</label>-->
-    <!--<fieldset>-->
     <label class="neon-label" for="username">username:</label>
     <input type="text" name="username" required>
     <label class="neon-label" for="genre">genre:</label>
@@ -17,7 +15,6 @@ function makeTemplate() {
                 <option value="hey">Hip Hop</option>
             </select>
             <button type="submit" id="button-start-form">Submit</button>
-    <!--</fieldset>-->
     </form>
     `;
 }
@@ -31,7 +28,6 @@ export default class StartForm {
         const form = dom.getElementById('user-form');
 
 
-
         form.addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -43,12 +39,9 @@ export default class StartForm {
             };
 
             userInfoApi.add(userData);
+            localStorage.setItem('username', userData.username);
 
-
-            window.location = userData.genre;  
-            //  './sound-selection.html';
-
-            // form.reset();
+            window.location = userData.genre;
 
 
         });
