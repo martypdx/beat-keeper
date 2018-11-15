@@ -12,22 +12,22 @@ function makeTemplate() {
         <div class="names">
             <div id="cari">
                 Cari<br>Palazzolo<br>
-                <img src="./assets/pizzacat.gif" alt="">
+                <img src="./assets/pizzacat.gif" id="caris" alt="">
                 <p>about</p>
             </div>
             <div id="phoebe">
                 Phoebe<br>Lablonde<br>
-                <img src="https://media.giphy.com/media/X7NBev9zI0i2s/giphy.gif" >
+                <img src="https://media.giphy.com/media/X7NBev9zI0i2s/giphy.gif" id="phoebes">
                 <p>about</p>
             </div>
             <div id="drew">
-                Drew<br>Van Valkenburg<br>
-                <img src="./assets/userprofile.gif" alt="">
+                Drew<br><span id=last>Van Valkenburg</span><br>
+                <img src="./assets/userprofile.gif" id="drews" alt="">
                 <p>about</p>
             </div>
             <div id="chris">
-                Christina<br>T. Herlocker<br>
-                <img src="./assets/snoopy.gif" alt="">
+                <span id= first>Christina T.</span><br>Herlocker<br>
+                <img src="./assets/snoopy.gif" id="chriss" alt="">
                 <p>about</p>
             </div>
         </div>

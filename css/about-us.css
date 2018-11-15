@@ -63,6 +63,10 @@ div#drew {
    text-shadow: 0 0 20px #ff005b;
 }
 
+#last {
+   font-size: .845em;
+}
+
 div#chris {
    /* display: inline-flex;
    width: 290px;
@@ -76,6 +80,10 @@ div#chris {
    font-size: 2em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
+}
+
+#first {
+   font-size: .95em;
 }
 
 h3 {
@@ -112,6 +120,7 @@ div#team {
 
 a.nav-links {
    color: green;
+   margin: 10px;
 }
 
 a.nav-links:hover {
@@ -122,6 +131,32 @@ div.names img {
    width: 45%;
    /* margin-left: 10%; */
 }
+
+#caris {
+   width: 73%;
+   height: 53%;
+   margin: 0px 5px 0px 20px;
+}
+
+#phoebes {
+   width: 55%;
+}
+
+#drews {
+   width: 46%;
+}
+
+#chriss {
+   width: 60%;
+   height: 53%;
+   background: 50% 50% no-repeat;
+}
+
+.thumb1 { 
+   background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+   width: 250px;
+   height: 250px;
+ }
 
 div.names p {
    font-size: 14px;
