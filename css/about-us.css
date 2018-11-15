@@ -1,56 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 
+img.logo {
+   width: 60%;
+}
 
-.head {
+main.head {
    background-size: cover;
    background-image: url('../assets/neon-pic.jpg');
    border: 2px solid #76ff03;
-   padding: 3px;
+   padding: 5px;
    margin: 2px;
+   text-align: center;
 }
 
-#home {
-   display: inline-flex;
-   float: left;
-   font-size: 3em;
-   margin: 20px;
-   padding: 10px;
-}
-
-#titled {
-   display: inline-flex;
-   float: center;
-   font-size: 5em;
-   color: solid #76ff03;
-   border: 2px solid #76ff03;
-   margin: 10px;
-   padding: 20px;
-}
-
-#about-link {
-   display: inline-flex;
-   float: right;
-   font-size: 3em;
-   margin: 20px;
-   padding: 10px;
-}
-
-.nav
-{
-   display: inline-flex;
-   justify-content: space-evenly;
-   font-size: 3em;
-   padding: 10px;
-}
-
-.names
-{
+div.names {
    display:flex;
    justify-content: space-evenly;
 }
 
-#cari
-{
+div#cari {
    /* display: inline-flex;
    width: 290px;
    height: 100px;
@@ -65,8 +33,7 @@
    text-shadow: 0 0 20px #ff005b;
 }
 
-#phoebe
-{
+div#phoebe {
    /* display: inline-flex;
    width: 290px;
    height: 100px;
@@ -81,8 +48,7 @@
    text-shadow: 0 0 20px #ff005b;
 }
 
-#drew
-{
+div#drew {
    /* display: inline-flex;
    width: 290px;
    height: 100px;
@@ -97,8 +63,7 @@
    text-shadow: 0 0 20px #ff005b;
 }
 
-#chris
-{
+div#chris {
    /* display: inline-flex;
    width: 290px;
    height: 100px;
@@ -113,33 +78,34 @@
    text-shadow: 0 0 20px #ff005b;
 }
 
-h3
-{
+h3 {
    text-align: center;
    font-size: 3em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
 }
 
-body
-{
-   margin: 0;
-   padding: 0;
+body {
+   margin: 0 auto;
+   /* padding: 0; */
+   color:pink;
    background-color:black;
-   background-size: cover;
+   /* background-size: cover; */
    font-family: 'Quicksand', sans-serif;
 }
 
-main
-{
-   font-size: 1em;
+main {
+   /* font-size: 1em; */
    color: #fff;
-   text-shadow: 0 0 20px #ff005b;
+   /* text-shadow: 0 0 20px #ff005b; */
 }
 
-#team
-{
-   font-size: 2em;
+span.nav-right {
+   float: right;
+}
+
+div#team {
+   /* font-size: 2em; */
    font-weight: bold;
    text-align: center;
 }
@@ -153,11 +119,17 @@ a.nav-links:hover {
 }
 
 div.names img {
-   width:45%;
-   margin-left: 10%;  
+   width: 45%;
+   /* margin-left: 10%; */
 }
 
 div.names p {
    font-size: 14px;
-   
+}
+
+@media screen and (max-width: 660px) {
+   div.names {
+      display: flex;
+      flex-direction: column;
+   }
 }

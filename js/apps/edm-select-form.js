@@ -40,9 +40,14 @@ export default class EdmSelectForm {
                 sample3: elements.sample3.checked
             };
 
-            userData.add(data);
+            if(data.sample1 === false && data.sample2 === false && data.sample3 === false){
+                alert ('Please select at least one');
+            }
+            else {
+                userData.add(data);
 
-            window.location = './song-result.html';
+                window.location = './song-result.html';
+            }
 
         });
         return dom;
