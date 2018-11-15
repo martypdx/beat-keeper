@@ -80,25 +80,25 @@ label.neon-label {
     border-radius: 12px;
     position: absolute;
     left: 40%;
-    top: 65%;
+    top: 75%;
 }
 
 #sample1-fieldset {
     position: absolute;
     left: 40%;
-    top: 35%;
+    top: 45%;
 }
 
 #sample2-fieldset {
     position: absolute;
     left: 40%;
-    top: 45%;
+    top: 55%;
 }
 
 #sample3-fieldset {
     position: absolute;
     left: 40%;
-    top: 55%;
+    top: 65%;
 }
 
 #header {
