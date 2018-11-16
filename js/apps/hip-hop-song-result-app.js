@@ -8,7 +8,7 @@ function makeTemplate() {
     <header></header>
     <div class="result-buttons">
     <button id="play">Play</button>
-    <button id="stop">Stop</button>
+    <button type="button" onclick="javascript:history.back()">Back</button>
     </div>
     `;
 }
