@@ -110,14 +110,6 @@ div#team {
    text-align: center;
 }
 
-a.nav-links {
-   color: green;
-}
-
-a.nav-links:hover {
-   color: red;
-}
-
 div.names img {
    width: 45%;
    /* margin-left: 10%; */

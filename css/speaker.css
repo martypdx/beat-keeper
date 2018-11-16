@@ -4,13 +4,15 @@
 } */
 
 #speakerLeft {
-    position: absolute;
     left: 0;
+    float: left;
+    position: absolute;
 }
 
 #speakerRight {
-    position: absolute;
     right: 0;
+    float: right;
+    position: absolute;
 }
 
 .speaker {
