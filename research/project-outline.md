@@ -1,1 +1,1 @@
-[Project Wireframe Snapshot](/assets/wireframe-dev.jpg)
+[Project Wireframe Snapshot](wireframe-dev.jpg)
