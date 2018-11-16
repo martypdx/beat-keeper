@@ -5,19 +5,12 @@ import Header from '../header.js';
 function makeTemplate() {
     return html`
     <header></header>
-    <!--<nav>
-        <div>
-            <a href="./index.html">Home</a>
-        </div>
-        <div>
-            <a href="./about-us.html">About The Devs</a>
-        </div>
-    </nav>-->
     <div id="form">
     </div>
-    <br>
+    <div class="speaker-div">
     <img src="./assets/speaker.jpg" class="speaker" id="speakerLeft">
     <img src="./assets/speaker.jpg" class="speaker" id="speakerRight">
+    </div>
     `;
 }
 

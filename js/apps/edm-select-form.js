@@ -41,7 +41,7 @@ export default class EdmSelectForm {
             };
 
             if(data.sample7 === false && data.sample8 === false && data.sample9 === false){
-                alert ('Please select at least one');
+                alert('Please select at least one');
             }
             else {
                 userData.add(data);

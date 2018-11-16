@@ -2,14 +2,16 @@ import html from '../helper/html.js';
 import Header from '../header.js';
 
 var data = JSON.parse(localStorage.getItem('userSettings'));
-// console.log(data);
 
 function makeTemplate() {
     return html`
     <header></header>
+    <div class="result-buttons">
+    <button id="play">Play</button>
+    <button type="button" onclick="javascript:history.back()">Back</button>
+    </div>
     `;
 }
-
 
 export function playSample(audio, gif) {
     var x = document.createElement('AUDIO');
@@ -25,54 +27,50 @@ export function playSample(audio, gif) {
     document.body.appendChild(image);
 }
 
-
-
-
 export default class EdmSongResultApp {
     render() {
+        const dom = makeTemplate();
 
-        let value;
-
-        if(data.sample7 === true && data.sample8 === false && data.sample9 === false) {
+        dom.querySelector('#play').addEventListener('click', function() {
+            if(data.sample7 === true && data.sample8 === false && data.sample9 === false) {
             //sample7, just the kick
-            playSample('assets/newedm-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
-        }
-        if(data.sample8 === true && data.sample7 === false && data.sample9 === false) {
+                playSample('assets/newedm-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+            }
+            if(data.sample8 === true && data.sample7 === false && data.sample9 === false) {
             //sample8, just the snare
-            playSample('assets/newedm-snare.mp3', 'assets/pizzacat.gif');
-        }
-        if(data.sample9 === true && data.sample7 === false && data.sample8 === false) {
+                playSample('assets/newedm-snare.mp3', 'assets/pizzacat.gif');
+            }
+            if(data.sample9 === true && data.sample7 === false && data.sample8 === false) {
             //sample9, just the percussion
-            playSample('assets/newedm-percussion.mp3', 'assets/userprofile.gif');
-        }
-        if(data.sample7 === true && data.sample9 === true && data.sample8 === false) {
+                playSample('assets/newedm-percussion.mp3', 'assets/userprofile.gif');
+            }
+            if(data.sample7 === true && data.sample9 === true && data.sample8 === false) {
             //sample7, the kick
-            playSample('assets/newedm-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+                playSample('assets/newedm-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
             //sample9, edm-percussion
-            playSample('assets/newedm-percussion.mp3', 'assets/userprofile.gif');
-        }
-        if(data.sample7 === true && data.sample8 === true && data.sample9 === false) {
+                playSample('assets/newedm-percussion.mp3', 'assets/userprofile.gif');
+            }
+            if(data.sample7 === true && data.sample8 === true && data.sample9 === false) {
             //sample7, the kick
-            playSample('assets/newedm-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+                playSample('assets/newedm-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
             //sample8, snare 
-            playSample('assets/newedm-snare.mp3', 'assets/pizzacat.gif');
-        }
-        if(data.sample8 === true && data.sample9 === true && data.sample7 === false) {
+                playSample('assets/newedm-snare.mp3', 'assets/pizzacat.gif');
+            }
+            if(data.sample8 === true && data.sample9 === true && data.sample7 === false) {
             //sample8, snare
-            playSample('assets/newedm-snare.mp3', 'assets/pizzacat.gif');
+                playSample('assets/newedm-snare.mp3', 'assets/pizzacat.gif');
             //sample9, edm-percussion
-            playSample('assets/newedm-percussion.mp3', 'assets/userprofile.gif');
-        }
-        if(data.sample7 && data.sample8 && data.sample9 === true) {
+                playSample('assets/newedm-percussion.mp3', 'assets/userprofile.gif');
+            }
+            if(data.sample7 && data.sample8 && data.sample9 === true) {
             //sample7, the kick
-            playSample('assets/newedm-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+                playSample('assets/newedm-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
             //sample8, snare
-            playSample('assets/newedm-snare.mp3', 'assets/pizzacat.gif');
+                playSample('assets/newedm-snare.mp3', 'assets/pizzacat.gif');
             //sample 3, edm-percussion
-            playSample('assets/newedm-percussion.mp3', 'assets/userprofile.gif');
-        }
-
-        const dom = makeTemplate(value);
+                playSample('assets/newedm-percussion.mp3', 'assets/userprofile.gif');
+            }
+        });
         const headerSection = dom.querySelector('header');
         const header = new Header();
         headerSection.appendChild(header.render());

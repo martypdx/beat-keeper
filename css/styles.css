@@ -2,20 +2,12 @@
 
 
 img.logo {
-    width: 60%;
+    width: 65%;
+    margin: .25em;
 }
 
 html {
     font-family: 'Quicksand', sans-serif;
-}
-
-a.nav-links {
-    color: green;
-    margin: 10px;
-}
-
-a.nav-links:hover {
-    color: red;
 }
 
 div.header-div {
@@ -37,8 +29,46 @@ label.neon-label {
     padding: 12px;
 }
 
+select#music-genre {
+    /* zoom: 1.5; */
+}
+
+button:hover {
+    background: black;
+}
+
+button {
+    margin: 15px;
+    border-radius: 12px;
+    border: 2px solid #ff005b;
+    left: 45%;
+    top: 42%; 
+    width: 5em;
+    height: 2em;
+    font-size: 15px;
+    color: white;
+    text-shadow: 0 0 20px #ff005b;
+    background: #ff005b;
+    -webkit-transition-property: background;
+       -moz-transition-property: background;
+         -o-transition-property: background;
+            transition-property: background;
+    -webkit-transition-duration: .5s;
+       -moz-transition-duration: .5s;
+         -o-transition-duration: .5s;
+            transition-duration: .5s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+div.speaker-div {
+    display: inline;
+}
+
 .neon {
-   position: center;
+   /* position: center; */
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -59,13 +89,6 @@ label.neon-label {
    color: #ff005b;
 }
 
-#button-start-form {
-    margin: 15px;
-    border-radius: 12px;
-    left: 45%;
-    top: 42%; 
-}
-
 #button-sound-select {
     margin: 15px;
     border-radius: 12px;
@@ -73,6 +96,21 @@ label.neon-label {
     left: 40%;
     top: 75%;
 }
+
+a#textSizeTwo, a#textSize {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
+ }
+ 
+ a#textSizeTwo:hover, a#textSize:hover {
+    color: #ff005b;
+ }
 
 form#hip-hop-select-form, form#sound-select-form, form#edm-select-form, form#jazz-select-form {
     text-align: center;
@@ -84,14 +122,15 @@ input[type=checkbox] {
     zoom: 1.5;
 }
 
-select {
-    background-color: white;
+input[type=text] {
+    height: 1.5em;
+    text-indent: 5px;
+    font-size: 14px;
 }
 
-#header {
-    text-align:center;
-    /* left: 30%;
-    top: 12%; */
+select {
+    background-color: white;
+    font-size: 14px;
 }
 
 img.song-results-img {
@@ -105,20 +144,21 @@ img.song-results-img {
 }
 
 #user-form {
-    display: absolute;
+    /* display: absolute; */
     left: 50%;
     top:50%;
-    /* margin-left: auto;
-    margin-right: auto;
-    text-align: left; */
 }
 
-
-/* style audio control: https://stackoverflow.com/questions/4126708/is-it-possible-to-style-html5-audio-tag */ 
-/* audio::-webkit-media-controls-panel {
-    background-color: red;
+div.result-buttons {
+    text-align: center;
 }
 
-audio::-webkit-media-controls-play-button {
-    background-color: blue;
+span.nav-right {
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
+}
+
+/* @media screen and (max-width: 650px) {
+
 } */

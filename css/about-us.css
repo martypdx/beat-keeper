@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 
 img.logo {
-   width: 60%;
+   width: 65%;
+   margin: .25em;
 }
 
 main.head {
@@ -19,19 +20,19 @@ div.names {
 }
 
 div#cari {
-   font-size: 2em;
+   font-size: 1.5em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
 }
 
 div#phoebe {
-   font-size: 2em;
+   font-size: 1.5em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
 }
 
 div#drew {
-   font-size: 2em;
+   font-size: 1.5em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
 }
@@ -41,7 +42,7 @@ div#drew {
 }
 
 div#chris {
-   font-size: 2em;
+   font-size: 1.5em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
 }
@@ -58,7 +59,7 @@ h3 {
 }
 
 body {
-   margin: 0 auto;
+   /* margin: 0 auto; */
    color:pink;
    background-color:black;
    font-family: 'Quicksand', sans-serif;
@@ -77,53 +78,39 @@ div#team {
    font-weight: bold;
    text-align: center;
 }
-
-a.nav-links {
-   color: green;
-   margin: 10px;
+span.nav-right {
+   font-size: 1.5em;
+   color: #fff;
+   text-shadow: 0 0 20px #ff005b;
 }
 
-a.nav-links:hover {
-   color: red;
+
+a#textSizeTwo, a#textSize {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin: 0;
+   padding: 0 20px;
+   font-size: 1.5em;
+   color: #fff;
+   text-shadow: 0 0 20px #ff005b;
+}
+
+a#textSizeTwo:hover, a#textSize:hover {
+   color: #ff005b;
 }
 
 div.names img {
    width: 45%;
    /* margin-left: 10%; */
 }
-/*
-#caris {
-   width: 62%;
-   height: 48;
-   margin: 0px 5px 0px 20px;
-}
-
-#phoebes {
-   width: 55%;
-}
-
-#drews {
-   width: 46%;
-}
-
-#chriss {
-   width: 55%;
-   height: 55%;
-   background: 50% 50% no-repeat;
-}
-
-.thumb1 { 
-   background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
-/*   width: 250px;
-   height: 250px;
-}
-*/
 
 div.names p {
+   margin: 15px;
    font-size: 14px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
    div.names {
       display: flex;
       flex-direction: column;

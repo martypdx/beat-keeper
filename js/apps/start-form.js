@@ -16,11 +16,8 @@ function makeTemplate() {
                 <option value="hip-hop-selection.html">Hip Hop</option>
                 <option value="edm-selection.html">EDM</option>
                 <option value="jazz-selection.html">Jazz</option>
-
             </select>
             <button type="submit" id="button-start-form">Submit</button>
-
-
     </form>
     </div>
     `;
