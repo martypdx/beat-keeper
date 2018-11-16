@@ -19,45 +19,18 @@ div.names {
 }
 
 div#cari {
-   /* display: inline-flex;
-   width: 290px;
-   height: 100px;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   margin: 3px;
-   padding: 5px;
-   border: 2px #15e6f5; */
    font-size: 2em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
 }
 
 div#phoebe {
-   /* display: inline-flex;
-   width: 290px;
-   height: 100px;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   margin: 10px;
-   padding: 10px;
-   border: 2px #15e6f5; */
    font-size: 2em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
 }
 
 div#drew {
-   /* display: inline-flex;
-   width: 290px;
-   height: 100px;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   margin: 3px;
-   padding: 5px;
-   border: 2px #15e6f5; */
    font-size: 2em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
@@ -68,15 +41,6 @@ div#drew {
 }
 
 div#chris {
-   /* display: inline-flex;
-   width: 290px;
-   height: 100px;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   margin: 3px;
-   padding: 5px;
-   border: 2px #15e6f5; */
    font-size: 2em;
    color: #fff;
    text-shadow: 0 0 20px #ff005b;
@@ -95,17 +59,13 @@ h3 {
 
 body {
    margin: 0 auto;
-   /* padding: 0; */
    color:pink;
    background-color:black;
-   /* background-size: cover; */
    font-family: 'Quicksand', sans-serif;
 }
 
 main {
-   /* font-size: 1em; */
    color: #fff;
-   /* text-shadow: 0 0 20px #ff005b; */
 }
 
 span.nav-right {
@@ -131,7 +91,7 @@ div.names img {
    width: 45%;
    /* margin-left: 10%; */
 }
-
+/*
 #caris {
    width: 62%;
    height: 48;
@@ -154,15 +114,16 @@ div.names img {
 
 .thumb1 { 
    background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
-   width: 250px;
+/*   width: 250px;
    height: 250px;
- }
+}
+*/
 
 div.names p {
    font-size: 14px;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 900px) {
    div.names {
       display: flex;
       flex-direction: column;

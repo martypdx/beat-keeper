@@ -16,11 +16,12 @@ export function playSample(audio, gif) {
     x.setAttribute('src', audio);
     x.setAttribute('controls', 'controls');
     x.setAttribute('autoplay', 'autoplay');
+    x.setAttribute('hidden', 'hidden');
     x.setAttribute('loop', 'loop');
-    // x.setAttribute('hidden', 'hidden');
     document.body.appendChild(x);
     var image = document.createElement('IMG');
     image.setAttribute('src', gif);
+    image.classList.add('song-results-img');
     document.body.appendChild(image);
 }
 
@@ -34,41 +35,41 @@ export default class SongResultApp {
 
         if(data.sample1 === true && data.sample2 === false && data.sample3 === false) {
             //sample1, just the kick
-            playSample('assets/rock-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+            playSample('assets/newrock-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
         }
         if(data.sample2 === true && data.sample1 === false && data.sample3 === false) {
             //sample2, just the snare
-            playSample('assets/rock-snare.mp3', 'assets/pizzacat.gif');
+            playSample('assets/newrock-snare.mp3', 'assets/pizzacat.gif');
         }
         if(data.sample3 === true && data.sample1 === false && data.sample2 === false) {
             //sample3, just the percussion
-            playSample('assets/rock-percussion.mp3', 'assets/userprofile.gif');
+            playSample('assets/newrock-percussion.mp3', 'assets/userprofile.gif');
         }
         if(data.sample1 === true && data.sample3 === true && data.sample2 === false) {
             //sample1, the kick
-            playSample('assets/rock-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+            playSample('assets/newrock-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
             //sample3, percussion
-            playSample('assets/rock-percussion.mp3', 'assets/userprofile.gif');
+            playSample('assets/newrock-percussion.mp3', 'assets/userprofile.gif');
         }
         if(data.sample1 === true && data.sample2 === true && data.sample3 === false) {
             //sample1, the kick
-            playSample('assets/rock-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+            playSample('assets/newrock-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
             //sample2, snare 
-            playSample('assets/rock-snare.mp3', 'assets/pizzacat.gif');
+            playSample('assets/newrock-snare.mp3', 'assets/pizzacat.gif');
         }
         if(data.sample2 === true && data.sample3 === true && data.sample1 === false) {
             //sample2, snare
-            playSample('assets/rock-snare.mp3', 'assets/pizzacat.gif');
+            playSample('assets/newrock-snare.mp3', 'assets/pizzacat.gif');
             //sample3, percussion
-            playSample('assets/rock-percussion.mp3', 'assets/userprofile.gif');
+            playSample('assets/newrock-percussion.mp3', 'assets/userprofile.gif');
         }
         if(data.sample1 && data.sample2 && data.sample3 === true) {
             //sample1, the kick
-            playSample('assets/rock-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+            playSample('assets/newrock-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
             //sample2, snare
-            playSample('assets/rock-snare.mp3', 'assets/pizzacat.gif');
+            playSample('assets/newrock-snare.mp3', 'assets/pizzacat.gif');
             //sample 3, percussion
-            playSample('assets/rock-percussion.mp3', 'assets/userprofile.gif');
+            playSample('assets/newrock-percussion.mp3', 'assets/userprofile.gif');
         }
 
         const dom = makeTemplate(value);
