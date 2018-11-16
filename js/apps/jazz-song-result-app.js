@@ -42,33 +42,33 @@ export default class JazzSongResultApp {
             }
             if(data.sample12 === true && data.sample10 === false && data.sample11 === false) {
             //sample12, just the percussion
-                playSample('assets/newjazz-percussion.mp3', 'assets/userprofile.gif');
+                playSample('assets/newjazz-percussion.mp3', 'assets/jazz-pizza.gif');
             }
             if(data.sample10 === true && data.sample12 === true && data.sample11 === false) {
             //sample10, the kick
                 playSample('assets/newjazz-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
             //sample12, jazz-percussion
-                playSample('assets/newjazz-percussion.mp3', 'assets/userprofile.gif');
+                playSample('assets/newjazz-percussion.mp3', '');
             }
             if(data.sample10 === true && data.sample11 === true && data.sample12 === false) {
             //sample10, the kick
                 playSample('assets/newjazz-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
             //sample11, snare 
-                playSample('assets/newjazz-snare.mp3', 'assets/pizzacat.gif');
+                playSample('assets/newjazz-snare.mp3', '');
             }
             if(data.sample11 === true && data.sample12 === true && data.sample10 === false) {
             //sample11, snare
                 playSample('assets/newjazz-snare.mp3', 'assets/pizzacat.gif');
             //sample12, jazz-percussion
-                playSample('assets/newjazz-percussion.mp3', 'assets/userprofile.gif');
+                playSample('assets/newjazz-percussion.mp3', '');
             }
             if(data.sample10 && data.sample11 && data.sample12 === true) {
             //sample10, the kick
-                playSample('assets/newjazz-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+                playSample('assets/newjazz-kick.mp3', 'assets/jazz.gif');
             //sample11, snare
-                playSample('assets/newjazz-snare.mp3', 'assets/pizzacat.gif');
+                playSample('assets/newjazz-snare.mp3', '');
             //sample 3, jazz-percussion
-                playSample('assets/newjazz-percussion.mp3', 'assets/userprofile.gif');
+                playSample('assets/newjazz-percussion.mp3', '');
             }
         });
 
