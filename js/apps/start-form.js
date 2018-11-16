@@ -8,7 +8,7 @@ function makeTemplate() {
     <div id="user-div">
     <form id="user-form">
     <label class="user-form-font" for="username">username:</label>
-    <input type="text" name="username" required>
+    <input type="text" name="username" maxLength="12" required autofocus>
     <label class="user-form-font" for="genre">genre:</label>
             <select id="music-genre" name="genre" required>
                 <option value="" disabled selected>Select a genre</option>

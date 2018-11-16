@@ -30,7 +30,7 @@ label.neon-label {
 }
 
 select#music-genre {
-    /* zoom: 1.5; */
+    zoom: 1.20;
 }
 
 button:hover {
@@ -144,9 +144,7 @@ img.song-results-img {
 }
 
 #user-form {
-    /* display: absolute; */
-    left: 50%;
-    top:50%;
+    margin-top: 15px;
 }
 
 div.result-buttons {
@@ -159,6 +157,25 @@ span.nav-right {
     text-shadow: 0 0 20px #ff005b;
 }
 
-/* @media screen and (max-width: 650px) {
+@media screen and (max-width: 775px) {
+    #user-form {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    #user-form {
+        width: 63%;
+        margin: 0 auto;
+    }
+}
 
-} */
+@media screen and (max-width: 580px) {
+    #user-form {
+        width: 55%;
+        margin: 0 auto;
+    }
+    input[type="text"] {
+        margin: 10px auto;
+    }
+}
