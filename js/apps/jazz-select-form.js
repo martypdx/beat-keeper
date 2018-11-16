@@ -32,7 +32,7 @@ export default class JazzSelectForm {
 
         form.addEventListener('submit', function(event) {
             event.preventDefault();
-            // submit++;
+
             const elements = form.elements;
             const data = {
                 sample10: elements.sample10.checked,

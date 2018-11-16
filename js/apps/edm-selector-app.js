@@ -26,8 +26,6 @@ export default class EdmSelectApp {
 
         headerSection.appendChild(header.render());
 
-        console.log(headerSection);
-
         return dom;
     }
 }

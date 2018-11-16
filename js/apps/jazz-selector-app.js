@@ -17,11 +17,11 @@ export default class JazzSelectApp {
         const dom = makeTemplate();
 
         const userForm = dom.getElementById('form');
-        
+
         const headerSection = dom.getElementById('jazz-header');
 
         const form = new JazzSelectForm();
-        
+
         const header = new Header();
 
         userForm.appendChild(form.render());

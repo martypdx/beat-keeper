@@ -32,7 +32,7 @@ export default class HipHopSelectForm {
 
         form.addEventListener('submit', function(event) {
             event.preventDefault();
-            // submit++;
+
             const elements = form.elements;
             const data = {
                 sample4: elements.sample4.checked,

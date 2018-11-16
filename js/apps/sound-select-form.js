@@ -32,7 +32,7 @@ export default class SoundSelectForm {
 
         form.addEventListener('submit', function(event) {
             event.preventDefault();
-            // submit++;
+
             const elements = form.elements;
             const data = {
                 sample1: elements.sample1.checked,

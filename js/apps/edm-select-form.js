@@ -32,7 +32,7 @@ export default class EdmSelectForm {
 
         form.addEventListener('submit', function(event) {
             event.preventDefault();
-            // submit++;
+
             const elements = form.elements;
             const data = {
                 sample7: elements.sample7.checked,

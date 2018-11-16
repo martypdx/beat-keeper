@@ -15,15 +15,15 @@ export default class SoundSelectApp {
         const dom = makeTemplate();
 
         const userForm = dom.getElementById('form');
-        
+
         const headerSection = dom.querySelector('header');
 
         const form = new SoundSelectForm();
-        
+
         const header = new Header();
 
         userForm.appendChild(form.render());
-        
+
         headerSection.appendChild(header.render());
 
         return dom;
