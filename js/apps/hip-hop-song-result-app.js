@@ -34,37 +34,37 @@ export default class HipHopSongResultApp {
         dom.querySelector('#play').addEventListener('click', function() {
             if(data.sample4 === true && data.sample5 === false && data.sample6 === false) {
             //sample4, just the kick
-                playSample('assets/newhiphop-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+                playSample('assets/newhiphop-kick.mp3', 'https://media.giphy.com/media/RO8u908r6PsOc/giphy.gif');
             }
             if(data.sample5 === true && data.sample4 === false && data.sample6 === false) {
             //sample5, just the snare
-                playSample('assets/newhiphop-snare.mp3', 'assets/pizzacat.gif');
+                playSample('assets/newhiphop-snare.mp3', 'https://media.giphy.com/media/1iuaihkpi8Pnqak08u/giphy.gif');
             }
             if(data.sample6 === true && data.sample4 === false && data.sample5 === false) {
             //sample6, just the percussion
-                playSample('assets/newhiphop-percussion.mp3', 'assets/userprofile.gif');
+                playSample('assets/newhiphop-percussion.mp3', 'https://media.giphy.com/media/3o7WTwCjhStGCvmQjm/giphy.gif');
             }
             if(data.sample4 === true && data.sample6 === true && data.sample5 === false) {
-            //sample4, the kick
-                playSample('assets/newhiphop-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+            //sample4, the kick 
+                playSample('assets/newhiphop-kick.mp3', 'https://media.giphy.com/media/dJp2CZKGEMok8/giphy.gif');
             //sample6, percussion
                 playSample('assets/newhiphop-percussion.mp3', '');
             }
             if(data.sample4 === true && data.sample5 === true && data.sample6 === false) {
             //sample4, the kick
-                playSample('assets/newhiphop-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+                playSample('assets/newhiphop-kick.mp3', 'https://media.giphy.com/media/kgKrO1A3JbWTK/giphy.gif');
             //sample5, snare 
                 playSample('assets/newhiphop-snare.mp3', '');
             }
             if(data.sample5 === true && data.sample6 === true && data.sample4 === false) {
-            //sample5, snare
-                playSample('assets/newhiphop-snare.mp3', 'assets/pizzacat.gif');
+            //sample5, snare  here
+                playSample('assets/newhiphop-snare.mp3', 'https://media.giphy.com/media/4EFCEVrJenE5SFyodH/giphy.gif');
             //sample6, percussion
                 playSample('assets/newhiphop-percussion.mp3', '');
             }
             if(data.sample4 && data.sample5 && data.sample6 === true) {
             //sample4, the kick
-                playSample('assets/newhiphop-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+                playSample('assets/newhiphop-kick.mp3', 'https://media.giphy.com/media/hQB6XZMkBdOq4/giphy.gif');
             //sample5, snare
                 playSample('assets/newhiphop-snare.mp3', '');
             //sample 3, percussion
