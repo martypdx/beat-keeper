@@ -5,10 +5,11 @@ import userInfoApi from '../services/user-info-api.js';
 
 function makeTemplate() {
     return html`
+    <div id="user-div">
     <form id="user-form">
-    <label class="neon-label" for="username">username:</label>
+    <label class="user-form-font" for="username">username:</label>
     <input type="text" name="username" required>
-    <label class="neon-label" for="genre">genre:</label>
+    <label class="user-form-font" for="genre">genre:</label>
             <select id="music-genre" name="genre" required>
                 <option value="" disabled selected>Select a genre</option>
                 <option value="sound-selection.html">Rock</option>
@@ -19,10 +20,9 @@ function makeTemplate() {
             </select>
             <button type="submit" id="button-start-form">Submit</button>
 
-        <p>LAST SONG:</p>
-
 
     </form>
+    </div>
     `;
 }
 

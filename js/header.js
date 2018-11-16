@@ -7,8 +7,8 @@ function makeTemplate() {
     <img class="logo" src="assets/logo.png">
     <nav>
         <fieldset class="flex-center">
-        <a class="nav-links" href="./">Home</a>
-        <a class="nav-links" href="about-us.html">About Us</a>
+        <a class="neon" id="textSize" href="./">Home</a>
+        <a class="neon" id="textSizeTwo" href="about-us.html">About Us</a>
         <span class="nav-right">user: <span class="user"></span></span>
         </fieldset>
     </nav>

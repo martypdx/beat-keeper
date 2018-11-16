@@ -98,6 +98,22 @@ img.song-results-img {
     width: 100%;
 }
 
+#user-div {
+    top: 300px;
+    display: block;
+    text-align: center;
+}
+
+#user-form {
+    display: absolute;
+    left: 50%;
+    top:50%;
+    /* margin-left: auto;
+    margin-right: auto;
+    text-align: left; */
+}
+
+
 /* style audio control: https://stackoverflow.com/questions/4126708/is-it-possible-to-style-html5-audio-tag */ 
 /* audio::-webkit-media-controls-panel {
     background-color: red;
