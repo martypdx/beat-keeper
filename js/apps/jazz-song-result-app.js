@@ -34,31 +34,31 @@ export default class JazzSongResultApp {
         dom.querySelector('#play').addEventListener('click', function() {
             if(data.sample10 === true && data.sample11 === false && data.sample12 === false) {
             //sample10, just the kick
-                playSample('assets/newjazz-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+                playSample('assets/newjazz-kick.mp3', 'https://media.giphy.com/media/3o7btVD7xSbI59p9Sw/giphy.gif');
             }
             if(data.sample11 === true && data.sample10 === false && data.sample12 === false) {
             //sample11, just the snare
-                playSample('assets/newjazz-snare.mp3', 'assets/pizzacat.gif');
+                playSample('assets/newjazz-snare.mp3', 'http://68.media.tumblr.com/fd29bda454fffcc9b0681b1b92e777f4/tumblr_ohbkkiaBWh1rvtprso1_500.gif');
             }
             if(data.sample12 === true && data.sample10 === false && data.sample11 === false) {
             //sample12, just the percussion
-                playSample('assets/newjazz-percussion.mp3', 'assets/jazz-pizza.gif');
+                playSample('assets/newjazz-percussion.mp3', 'https://media.giphy.com/media/l4FGxotcT8O9C0d0c/giphy.gif');
             }
             if(data.sample10 === true && data.sample12 === true && data.sample11 === false) {
             //sample10, the kick
-                playSample('assets/newjazz-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+                playSample('assets/newjazz-kick.mp3', 'https://media.giphy.com/media/2A0KayWHqL3Gx3JCel/giphy.gif');
             //sample12, jazz-percussion
                 playSample('assets/newjazz-percussion.mp3', '');
             }
             if(data.sample10 === true && data.sample11 === true && data.sample12 === false) {
-            //sample10, the kick
-                playSample('assets/newjazz-kick.mp3', 'https://media.giphy.com/media/GRyUYyyBSNvs4/giphy.gif');
+            //sample10, the kick 
+                playSample('assets/newjazz-kick.mp3', 'https://media.giphy.com/media/vgxcxaFsPrnDQ6YIzf/giphy.gif');
             //sample11, snare 
                 playSample('assets/newjazz-snare.mp3', '');
             }
             if(data.sample11 === true && data.sample12 === true && data.sample10 === false) {
             //sample11, snare
-                playSample('assets/newjazz-snare.mp3', 'assets/pizzacat.gif');
+                playSample('assets/newjazz-snare.mp3', 'https://media.giphy.com/media/25799pYPgY5ry/giphy.gif');
             //sample12, jazz-percussion
                 playSample('assets/newjazz-percussion.mp3', '');
             }
