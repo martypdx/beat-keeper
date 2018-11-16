@@ -18,12 +18,11 @@ function makeTemplate() {
             <div id="phoebe">
                 Phoebe<br>Lablonde<br>
                 <img src="https://media.giphy.com/media/X7NBev9zI0i2s/giphy.gif" id="phoebes">
-                <p>When phoebe isn’t coding, she likes to:<br>
-                read, watch YouTube, and chill.</p>
+                <p>When Phoebe isn’t coding, she likes to read, watch YouTube, and chill.</p>
             </div>
             <div id="drew">
                 Drew<br><span id=last>Van Valkenburg</span><br>
-                <img src="./assets/userprofile.gif" id="drews" alt="">
+                <img src="https://media.giphy.com/media/X7ETNOpE3S00L2qoBo/giphy.gif" id="drews" alt="">
                 <p>When Drew isn't coding, he likes to play basketball and video games.</p>
             </div>
             <div id="chris">

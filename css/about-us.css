@@ -59,7 +59,6 @@ h3 {
 }
 
 body {
-   /* margin: 0 auto; */
    color:pink;
    background-color:black;
    font-family: 'Quicksand', sans-serif;
@@ -74,7 +73,6 @@ span.nav-right {
 }
 
 div#team {
-   /* font-size: 2em; */
    font-weight: bold;
    text-align: center;
 }
@@ -102,11 +100,12 @@ a#textSizeTwo:hover, a#textSize:hover {
 
 div.names img {
    width: 45%;
-   /* margin-left: 10%; */
+   margin: 10px 0px 10px 0px;
+   
 }
 
 div.names p {
-   margin: 15px;
+   margin: 0px 15px 5px 15px;
    font-size: 14px;
 }
 
