@@ -14,3 +14,5 @@ For our final week of Bootcamp One, we built a music app that plays mp3 samples 
 
 ## Technologies used
 Vanilla JavaScript, HTML/CSS
+
+// initial commit
