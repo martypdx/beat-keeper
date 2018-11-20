@@ -1,75 +1,71 @@
 import html from '../helper/html.js';
 import Header from '../header.js';
+import userData from '../services/user-api';
+import userInfo from '../services/user-info-api';
 
-var data = JSON.parse(localStorage.getItem('userSettings'));
+// get from service api!
+// var data = JSON.parse(localStorage.getItem('userSettings'));
 
 function makeTemplate() {
     return html`
-    <header></header>
-    <div class="result-buttons">
-    <button id="play">Play</button>
-    <button type="button" onclick="javascript:history.back()">Back</button>
-    </div>
+        <header></header>
+        <div class="result-buttons">
+        <button id="play">Play</button>
+        <button type="button" onclick="javascript:history.back()">Back</button>
+        </div>
     `;
 }
 
-export function playSample(audio, gif) {
-    var x = document.createElement('AUDIO');
-    x.setAttribute('src', audio);
-    x.setAttribute('controls', 'controls');
-    x.setAttribute('autoplay', 'autoplay');
-    x.setAttribute('hidden', 'hidden');
-    x.setAttribute('loop', 'loop');
-    document.body.appendChild(x);
-    var image = document.createElement('IMG');
+// there are two jobs here
+
+export function playSample(src) {
+    const audio = document.createElement('AUDIO');
+    audio.setAttribute('src', src);
+    audio.setAttribute('controls', 'controls');
+    audio.setAttribute('autoplay', 'autoplay');
+    audio.setAttribute('hidden', 'hidden');
+    audio.setAttribute('loop', 'loop');
+    document.body.appendChild(audio);
+}
+
+export function setImage(lookup) {
+    const gif = images[lookup];
+    const image = document.createElement('IMG');
     image.setAttribute('src', gif);
     image.classList.add('song-results-img');
     document.body.appendChild(image);
 }
 
+const images = {
+    'kick': 'https://media.giphy.com/media/4Lyd8tJk410iI/giphy.gif',
+    'snare': 'https://media.giphy.com/media/26BkMkEayiz8Ebjby/giphy.gif',
+    'percussion': 'https://media.giphy.com/media/1iv69b8Yq4H8pr2Ux2/giphy.gif',
+    'kicksnare': 'etc, etc',
+    'kickpercussion': 'etc, etc',
+    'kicksnarepercussion': 'etc, etc',
+    // ...
+};
+
 export default class SongResultApp {
     render() {
         const dom = makeTemplate();
 
+        // note that this is now an array
+        const data = userData.get();
+
+        const genre = userInfo.get().genre;
+
         dom.querySelector('#play').addEventListener('click', function() {
-            if(data.sample1 === true && data.sample2 === false && data.sample3 === false) {
-            //sample1, just the kick
-                playSample('assets/newrock-kick.mp3', 'https://media.giphy.com/media/4Lyd8tJk410iI/giphy.gif');
-            }
-            if(data.sample2 === true && data.sample1 === false && data.sample3 === false) {
-            //sample2, just the snare
-                playSample('assets/newrock-snare.mp3', 'https://media.giphy.com/media/26BkMkEayiz8Ebjby/giphy.gif');
-            }
-            if(data.sample3 === true && data.sample1 === false && data.sample2 === false) {
-            //sample3, just the percussion
-                playSample('assets/newrock-percussion.mp3', 'https://media.giphy.com/media/1iv69b8Yq4H8pr2Ux2/giphy.gif');
-            }
-            if(data.sample1 === true && data.sample3 === true && data.sample2 === false) {
-            //sample1, the kick
-                playSample('assets/newrock-kick.mp3', 'https://media.giphy.com/media/3oGRFHyKog2FrqoI2k/giphy.gif');
-            //sample3, percussion
-                playSample('assets/newrock-percussion.mp3', '');
-            }
-            if(data.sample1 === true && data.sample2 === true && data.sample3 === false) {
-            //sample1, the kick
-                playSample('assets/newrock-kick.mp3', 'https://media.giphy.com/media/BERl7tFjzsDrG/giphy.gif');
-            //sample2, snare 
-                playSample('assets/newrock-snare.mp3', '');
-            }
-            if(data.sample2 === true && data.sample3 === true && data.sample1 === false) {
-            //sample2, snare
-                playSample('assets/newrock-snare.mp3', 'https://media.giphy.com/media/3o6Mbba0Ok7SquCHAI/giphy.gif');
-            //sample3, percussion
-                playSample('assets/newrock-percussion.mp3', '');
-            }
-            if(data.sample1 && data.sample2 && data.sample3 === true) {
-            //sample1, the kick
-                playSample('assets/newrock-kick.mp3', 'https://media.giphy.com/media/GtFKXMBujHEFq/giphy.gif');
-            //sample2, snare
-                playSample('assets/newrock-snare.mp3', '');
-            //sample 3, percussion
-                playSample('assets/newrock-percussion.mp3', '');
-            }
+            // start the samples:
+            data.forEach(sample => {
+                playSample(`assets/${genre}-${sample}.mp3`);
+            });
+            
+            // here is how you might do this more dynamically
+            let lookup = data.join('');
+            const image = images[lookup];
+            setImage(image);
+              
         });
 
         const headerSection = dom.querySelector('header');

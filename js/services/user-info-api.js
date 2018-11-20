@@ -4,8 +4,10 @@ function saveUserInfo(userInfo) {
 }
 
 const userInfoApi = {
+    get() {
+        return localStorage.getItem('userInfo');
+    },
     add(userInfo) {
-
         saveUserInfo(userInfo);
     }
 };

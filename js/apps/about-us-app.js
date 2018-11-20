@@ -10,23 +10,23 @@ function makeTemplate() {
             <h3>about the developers</h3>
         </div>
         <div class="names">
-            <div id="cari">
+            <div class="profile">
                 Cari<br>Palazzolo<br>
                 <img src="./assets/pizzacat.gif" id="caris" alt="">
                 <p>When Cari isn't writing code, she likes to make art and music, eat pizza, and sip delicious IPAs.</p>
             </div>
-            <div id="phoebe">
+            <div class="profile">
                 Phoebe<br>Lablonde<br>
                 <img src="https://media.giphy.com/media/X7NBev9zI0i2s/giphy.gif" id="phoebes">
                 <p>When Phoebe isn’t coding, she likes to read, watch YouTube, and chill.</p>
             </div>
-            <div id="drew">
-                Drew<br><span id=last>Van Valkenburg</span><br>
+            <div class="profile">
+                Drew<br><span class="small-name">Van Valkenburg</span><br>
                 <img src="https://media.giphy.com/media/X7ETNOpE3S00L2qoBo/giphy.gif" id="drews" alt="">
                 <p>When Drew isn't coding, he likes to play basketball and video games.</p>
             </div>
-            <div id="chris">
-                <span id= first>Christina T.</span><br>Herlocker<br>
+            <div class="profile">
+                <span class="smaller-name">Christina T.</span><br>Herlocker<br>
                 <img src="./assets/snoopy.gif" id="chriss" alt="">
                 <p>When Chris isn't coding, she can be found reading, restoring vintage clothing, and playing video games.</p>
             </div>

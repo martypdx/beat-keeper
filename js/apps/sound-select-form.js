@@ -3,19 +3,19 @@ import userData from '../services/user-api.js';
 
 function makeTemplate() {
     return html`
-    <form id="sound-select-form">
-    <h1 id = "header">Choose your sounds</h1>
-        <fieldset id="sample1-fieldset">
+    <form class="select">
+    <h1 class="header">Choose your sounds</h1>
+        <fieldset>
             <label class="neon" for="sample1">Kick</label>
-            <input type="checkbox" name="sample1" id="sample1">
+            <input required type="checkbox" name="samples" id="sample1" value="kick">
         </fieldset>
-        <fieldset id="sample2-fieldset">
+        <fieldset>
             <label class="neon" for="sample2">Snare</label>
-            <input type="checkbox" name="sample2" id="sample2">
+            <input required type="checkbox" name="samples" id="sample2" value="snare">
         </fieldset>
-        <fieldset id="sample3-fieldset">
+        <fieldset>
             <label class="neon" for="sample3">Percussion</label>
-            <input type="checkbox" name="sample3" id="sample3">
+            <input required type="checkbox" name="samples" id="sample3" value="percussion">
         </fieldset>
         <button type="submit" id="button-sound-select">Submit</button>
     </form>
@@ -28,25 +28,29 @@ export default class SoundSelectForm {
     }
     render() {
         const dom = makeTemplate();
-        const form = dom.getElementById('sound-select-form');
+        const form = dom.querySelector('form');
 
         form.addEventListener('submit', function(event) {
             event.preventDefault();
 
-            const elements = form.elements;
-            const data = {
-                sample1: elements.sample1.checked,
-                sample2: elements.sample2.checked,
-                sample3: elements.sample3.checked,
-            };
-            if(data.sample1 === false && data.sample2 === false && data.sample3 === false){
-                alert ('Please select at least one');
+            const samples = form.elements.sample;
+            const data = [];
+            for(let i = 0; i < samples.length; i++) {
+                if(samples[i].checked) {
+                    data.push(samples[i].value);
+                }
             }
-            else {
-                userData.add(data);
 
-                window.location = './song-result.html';
-            }
+            // Don't need to check because html form check "required"
+            
+            // Normally don't compare against true or false, just test
+            // if(!data.sample1 && !data.sample2 && !data.sample3){
+            //     alert ('Please select at least one sample');
+            // }
+            // else {
+            userData.add(data);
+            window.location = './song-result.html';
+            // }
         });
         return dom;
     }

@@ -111,7 +111,7 @@ a#textSizeTwo, a#textSize {
     color: #ff005b;
  }
 
-form#hip-hop-select-form, form#sound-select-form, form#edm-select-form, form#jazz-select-form {
+form.select {
     text-align: center;
     width: 50%;
     margin: 0 auto;

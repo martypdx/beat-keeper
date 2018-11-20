@@ -1,5 +1,5 @@
 import html from './helper/html.js';
-import userData from './services/user-api.js';
+import userInfo from '../services/user-info-api.js';
 
 function makeTemplate() {
     return html`
@@ -19,10 +19,9 @@ function makeTemplate() {
 class Header {
     render() {
         const dom = makeTemplate();
-
         const user = dom.querySelector('.user');
-        user.textContent = localStorage.getItem('username', userData.username);
-
+        // use the api
+        user.textContent = userInfo.get().username;
         return dom;
     }
 }

@@ -2,15 +2,15 @@ import html from '../helper/html.js';
 import StartForm from '../apps/start-form.js';
 import Header from '../header.js';
 
+// indent your html!
 function makeTemplate() {
     return html`
-    <header></header>
-    <div id="form">
-    </div>
-    <div class="speaker-div">
-    <img src="./assets/speaker.jpg" class="speaker" id="speakerLeft">
-    <img src="./assets/speaker.jpg" class="speaker" id="speakerRight">
-    </div>
+        <header></header>
+        <div id="form"></div>
+        <div class="speaker-div">
+            <img src="./assets/speaker.jpg" class="speaker" id="speakerLeft">
+            <img src="./assets/speaker.jpg" class="speaker" id="speakerRight">
+        </div>
     `;
 }
 

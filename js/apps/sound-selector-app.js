@@ -1,12 +1,11 @@
 import html from '../helper/html.js';
-import SoundSelectForm from '../apps/sound-select-form.js';
 import Header from '../header.js';
-
+import SoundSelectForm from '../apps/sound-select-form.js';
 
 function makeTemplate() {
     return html`
-    <header></header>
-    <div id="form"></div>
+        <header></header>
+        <div></div>
     `;
 }
 
@@ -14,17 +13,14 @@ export default class SoundSelectApp {
     render() {
         const dom = makeTemplate();
 
-        const userForm = dom.getElementById('form');
-
         const headerSection = dom.querySelector('header');
-
-        const form = new SoundSelectForm();
+        const userForm = dom.querySelector('div');
 
         const header = new Header();
-
-        userForm.appendChild(form.render());
+        const form = new SoundSelectForm();
 
         headerSection.appendChild(header.render());
+        userForm.appendChild(form.render());
 
         return dom;
     }
